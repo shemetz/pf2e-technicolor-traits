@@ -1,0 +1,113 @@
+:root {
+    --border-style-pf2ett-rules: double;
+    --border-width-pf2ett-rules: 3px;
+    --border-style-pf2ett-no-rules: dotted;
+    --border-width-pf2ett-no-rules: 1px;
+    --color-pf2ett-important: #880000;
+    --color-border-pf2ett-important: #ff0000;
+    --color-pf2ett-occasional: #8f6a00;
+    --color-border-pf2ett-occasional: #ffb000;
+    --color-pf2ett-unimportant: #5da861;
+    --color-border-pf2ett-unimportant: #89c78d;
+    --color-pf2ett-rarity: #123f75;
+    --color-border-pf2ett-rarity: #1b80ba;
+    --color-pf2ett-build: #5d80a8;
+    --color-border-pf2ett-build: #89b1c7;
+    --color-pf2ett-category: #555555;
+    --color-border-pf2ett-category: #a8a8a8;
+
+    --order-pf2ett-rarity: 2;
+    --background-pf2ett-rarity: var(--color-pf2ett-unimportant);
+    --border-pf2ett-rarity: var(--border-style-pf2ett-no-rules) var(--border-width-pf2ett-no-rules) var(--color-border-pf2ett-unimportant);
+    --order-pf2ett-origin: 3;
+    --background-pf2ett-origin: var(--color-pf2ett-unimportant);
+    --border-pf2ett-origin: var(--border-style-pf2ett-no-rules) var(--border-width-pf2ett-no-rules) var(--color-border-pf2ett-unimportant);
+    --order-pf2ett-sub-origin: 4;
+    --background-pf2ett-sub-origin: var(--color-pf2ett-unimportant);
+    --border-pf2ett-sub-origin: var(--border-style-pf2ett-no-rules) var(--border-width-pf2ett-no-rules) var(--color-border-pf2ett-unimportant);
+    --order-pf2ett-build-limitation: 5;
+    --background-pf2ett-build-limitation: var(--color-pf2ett-unimportant);
+    --border-pf2ett-build-limitation: var(--border-style-pf2ett-rules) var(--border-width-pf2ett-rules) var(--color-border-pf2ett-unimportant);
+    --order-pf2ett-type-mechanic: 6;
+    --background-pf2ett-type-mechanic: var(--color-pf2ett-category);
+    --border-pf2ett-type-mechanic: var(--border-style-pf2ett-rules) var(--border-width-pf2ett-rules) var(--color-border-pf2ett-category);
+    --order-pf2ett-subtype-mechanic: 7;
+    --background-pf2ett-subtype-mechanic: var(--color-pf2ett-category);
+    --border-pf2ett-subtype-mechanic: var(--border-style-pf2ett-rules) var(--border-width-pf2ett-rules) var(--color-border-pf2ett-category);
+    --order-pf2ett-important-mechanic: 8;
+    --background-pf2ett-important-mechanic: var(--color-pf2ett-important);
+    --border-pf2ett-important-mechanic: var(--border-style-pf2ett-rules) var(--border-width-pf2ett-rules) var(--color-border-pf2ett-important);
+    --order-pf2ett-important-mechanic-outside-chat: 9;
+    --background-pf2ett-important-mechanic-outside-chat: var(--color-pf2ett-occasional);
+    --border-pf2ett-important-mechanic-outside-chat: var(--border-style-pf2ett-rules) var(--border-width-pf2ett-rules) var(--color-border-pf2ett-occasional);
+    --order-pf2ett-occasional-mechanic: 10;
+    --background-pf2ett-occasional-mechanic: var(--color-pf2ett-occasional);
+    --border-pf2ett-occasional-mechanic: var(--border-style-pf2ett-rules) var(--border-width-pf2ett-rules) var(--color-border-pf2ett-occasional);
+    --order-pf2ett-common-trigger: 11;
+    --background-pf2ett-common-trigger: var(--color-pf2ett-occasional);
+    --border-pf2ett-common-trigger: var(--border-style-pf2ett-no-rules) var(--border-width-pf2ett-no-rules) var(--color-border-pf2ett-occasional);
+    --order-pf2ett-mostly-fluff: 12;
+    --background-pf2ett-mostly-fluff: var(--color-pf2ett-unimportant);
+    --border-pf2ett-mostly-fluff: var(--border-style-pf2ett-rules) var(--border-width-pf2ett-rules) var(--color-border-pf2ett-unimportant);
+    --order-pf2ett-very-fluff: 13;
+    --background-pf2ett-very-fluff: var(--color-pf2ett-unimportant);
+    --border-pf2ett-very-fluff: var(--border-style-pf2ett-no-rules) var(--border-width-pf2ett-no-rules) var(--color-border-pf2ett-unimportant);
+    --order-pf2ett-user-custom: 20;
+    --background-pf2ett-user-custom: linear-gradient(in hsl longer hue 45deg, #880000, #880000 0 100%); /* dark rainbow gradient from red to red! */;
+    --border-pf2ett-user-custom: var(--border-style-pf2ett-rules) var(--border-width-pf2ett-rules) #d7fffa;
+}
+
+header.sheet-header {
+    --background-pf2ett-rarity: var(--color-pf2ett-rarity);
+    --border-pf2ett-rarity: var(--border-style-pf2ett-no-rules) var(--border-width-pf2ett-no-rules) var(--color-border-pf2ett-rarity);
+    --background-pf2ett-origin: var(--color-pf2ett-build);
+    --border-pf2ett-origin: var(--border-style-pf2ett-no-rules) var(--border-width-pf2ett-no-rules) var(--color-border-pf2ett-build);
+    --background-pf2ett-sub-origin: var(--color-pf2ett-build);
+    --border-pf2ett-sub-origin: var(--border-style-pf2ett-no-rules) var(--border-width-pf2ett-no-rules) var(--color-border-pf2ett-build);
+    --background-pf2ett-build-limitation: var(--color-pf2ett-build);
+    --border-pf2ett-build-limitation: var(--border-style-pf2ett-rules) var(--border-width-pf2ett-rules) var(--color-border-pf2ett-build);
+    --background-pf2ett-important-mechanic-outside-chat: var(--background-pf2ett-important-mechanic);
+    --border-pf2ett-important-mechanic-outside-chat: var(--border-pf2ett-important-mechanic);
+}
+
+#pf2ett-example-traits {
+    --background-pf2ett-rarity: linear-gradient(45deg, var(--color-pf2ett-rarity) 0 50%, var(--color-pf2ett-unimportant) 50% 100%);
+    --border-pf2ett-rarity: var(--border-style-pf2ett-no-rules) var(--border-width-pf2ett-no-rules) var(--color-border-pf2ett-rarity);
+    --background-pf2ett-origin: linear-gradient(45deg, var(--color-pf2ett-build) 0 50%, var(--color-pf2ett-unimportant) 50% 100%);
+    --border-pf2ett-origin: var(--border-style-pf2ett-no-rules) var(--border-width-pf2ett-no-rules) var(--color-border-pf2ett-build);
+    --background-pf2ett-sub-origin: linear-gradient(45deg, var(--color-pf2ett-build) 0 50%, var(--color-pf2ett-unimportant) 50% 100%);
+    --border-pf2ett-sub-origin: var(--border-style-pf2ett-no-rules) var(--border-width-pf2ett-no-rules) var(--color-border-pf2ett-build);
+    --background-pf2ett-build-limitation: linear-gradient(45deg, var(--color-pf2ett-build) 0 50%, var(--color-pf2ett-unimportant) 50% 100%);
+    --border-pf2ett-build-limitation: var(--border-style-pf2ett-rules) var(--border-width-pf2ett-rules) var(--color-border-pf2ett-build);
+    --background-pf2ett-important-mechanic-outside-chat: linear-gradient(45deg, var(--background-pf2ett-important-mechanic) 0 50%, var(--background-pf2ett-occasional-mechanic) 50% 100%);
+    --border-pf2ett-important-mechanic-outside-chat: var(--border-pf2ett-important-mechanic);
+    span {
+        margin-right: 2px;
+    }
+}
+
+.tag.rarity {
+    order: 2;
+}
+.tagify__input {
+    order: 999;
+}
+hr.vr {
+    order: 999;
+}
+
+/** @override pf2e style, I don't like how hard it is to read traits on item sheets that aren't on actors */
+.tagify[disabled] {
+    opacity: 1 !important;
+}
+
+.IGNORE {
+    /* Old/existing system colors, for reference. */
+    --color-bg-trait: #5e0000;
+    --color-border-trait: #d8c384;
+    --color-rarity-common: #323232;
+    --color-rarity-uncommon: #98513d;
+    --color-rarity-rare: #002664;
+    --color-rarity-unique: #54166e;
+    --tag-inset-shadow-size: 10em;
+}

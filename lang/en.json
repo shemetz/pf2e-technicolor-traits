@@ -1,0 +1,13 @@
+{
+  "pf2e-technicolor-traits": {
+    "Previews": {
+      "Title": "Preview Technicolor Traits",
+      "AllTraits": "Here's what all the traits will look like",
+      "ModeDropdownLabel": "Select mode"
+    },
+    "Mode": {
+      "Disabled": "Disabled",
+      "ColorScheme1": "1 - full opinionated colors"
+    }
+  }
+}

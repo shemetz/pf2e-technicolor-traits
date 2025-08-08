@@ -1,0 +1,721 @@
+*:not(.subsection.languages) > .tags {
+    tag#pf2ett-sample-rarity, .tag[data-slug="pf2ett-sample-rarity"], .tag[data-tooltip="undefined"],
+    tag#common, .tag[data-slug="common"], .tag[data-tooltip="PF2E.TraitDescriptionCommon"],
+    tag#rare, .tag[data-slug="rare"], .tag[data-tooltip="PF2E.TraitDescriptionRare"],
+    tag#uncommon, .tag[data-slug="uncommon"], .tag[data-tooltip="PF2E.TraitDescriptionUncommon"],
+    tag#unique, .tag[data-slug="unique"], .tag[data-tooltip="PF2E.TraitDescriptionUnique"] {
+        background: var(--background-pf2ett-rarity);
+        border: var(--border-pf2ett-rarity);
+        order: var(--order-pf2ett-rarity);
+
+        > div::before {
+            box-shadow: 0 0 0 var(--tag-inset-shadow-size) var(--background-pf2ett-rarity) inset;
+        }
+    }
+
+    tag#pf2ett-sample-origin, .tag[data-slug="pf2ett-sample-origin"], .tag[data-tooltip="undefined"],
+    tag#spellshot, .tag[data-slug="spellshot"], .tag[data-tooltip="PF2E.TraitNoDescription"],
+    tag#archetype, .tag[data-slug="archetype"], .tag[data-tooltip="PF2E.TraitDescriptionArchetype"],
+    tag#class, .tag[data-slug="class"], .tag[data-tooltip="PF2E.TraitDescriptionClass"],
+    tag#general, .tag[data-slug="general"], .tag[data-tooltip="PF2E.TraitDescriptionGeneral"],
+    tag#skill, .tag[data-slug="skill"], .tag[data-tooltip="PF2E.TraitDescriptionSkill"],
+    tag#aiuvarin, .tag[data-slug="aiuvarin"], .tag[data-tooltip="PF2E.TraitDescriptionAiuvarin"],
+    tag#anadi, .tag[data-slug="anadi"], .tag[data-tooltip="PF2E.TraitDescriptionAnadi"],
+    tag#android, .tag[data-slug="android"], .tag[data-tooltip="PF2E.TraitDescriptionAndroid"],
+    tag#aphorite, .tag[data-slug="aphorite"], .tag[data-tooltip="PF2E.TraitDescriptionAphorite"],
+    tag#ardande, .tag[data-slug="ardande"], .tag[data-tooltip="PF2E.TraitDescriptionArdande"],
+    tag#athamaru, .tag[data-slug="athamaru"], .tag[data-tooltip="PF2E.TraitDescriptionAthamaru"],
+    tag#automaton, .tag[data-slug="automaton"], .tag[data-tooltip="PF2E.TraitDescriptionAutomaton"],
+    tag#awakened-animal, .tag[data-slug="awakened-animal"], .tag[data-tooltip="PF2E.TraitDescriptionAwakenedAnimal"],
+    tag#beastkin, .tag[data-slug="beastkin"], .tag[data-tooltip="PF2E.TraitDescriptionBeastkin"],
+    tag#centaur, .tag[data-slug="centaur"], .tag[data-tooltip="PF2E.TraitDescriptionCentaur"],
+    tag#changeling, .tag[data-slug="changeling"], .tag[data-tooltip="PF2E.TraitDescriptionChangeling"],
+    tag#conrasu, .tag[data-slug="conrasu"], .tag[data-tooltip="PF2E.TraitDescriptionConrasu"],
+    tag#duergar, .tag[data-slug="duergar"], .tag[data-tooltip="undefined"],
+    tag#dragonblood, .tag[data-slug="dragonblood"], .tag[data-tooltip="PF2E.TraitDescriptionDragonblood"],
+    tag#dromaar, .tag[data-slug="dromaar"], .tag[data-tooltip="PF2E.TraitDescriptionDromaar"],
+    tag#dwarf, .tag[data-slug="dwarf"], .tag[data-tooltip="PF2E.TraitDescriptionDwarf"],
+    tag#elf, .tag[data-slug="elf"], .tag[data-tooltip="PF2E.TraitDescriptionElf"],
+    tag#fetchling, .tag[data-slug="fetchling"], .tag[data-tooltip="PF2E.TraitDescriptionFetchling"],
+    tag#fleshwarp, .tag[data-slug="fleshwarp"], .tag[data-tooltip="PF2E.TraitDescriptionFleshwarp"],
+    tag#ganzi, .tag[data-slug="ganzi"], .tag[data-tooltip="PF2E.TraitDescriptionGanzi"],
+    tag#geniekin, .tag[data-slug="geniekin"], .tag[data-tooltip="PF2E.TraitDescriptionGeniekin"],
+    tag#ghoran, .tag[data-slug="ghoran"], .tag[data-tooltip="PF2E.TraitDescriptionGhoran"],
+    tag#gnoll, .tag[data-slug="gnoll"], .tag[data-tooltip="PF2E.TraitDescriptionGnoll"],
+    tag#gnome, .tag[data-slug="gnome"], .tag[data-tooltip="PF2E.TraitDescriptionGnome"],
+    tag#goblin, .tag[data-slug="goblin"], .tag[data-tooltip="PF2E.TraitDescriptionGoblin"],
+    tag#goloma, .tag[data-slug="goloma"], .tag[data-tooltip="PF2E.TraitDescriptionGoloma"],
+    tag#grippli, .tag[data-slug="grippli"], .tag[data-tooltip="PF2E.TraitDescriptionGrippli"],
+    tag#halfling, .tag[data-slug="halfling"], .tag[data-tooltip="PF2E.TraitDescriptionHalfling"],
+    tag#human, .tag[data-slug="human"], .tag[data-tooltip="PF2E.TraitDescriptionHuman"],
+    tag#hungerseed, .tag[data-slug="hungerseed"], .tag[data-tooltip="undefined"],
+    tag#jotunborn, .tag[data-slug="jotunborn"], .tag[data-tooltip="undefined"],
+    tag#kashrishi, .tag[data-slug="kashrishi"], .tag[data-tooltip="PF2E.TraitDescriptionKashrishi"],
+    tag#kitsune, .tag[data-slug="kitsune"], .tag[data-tooltip="PF2E.TraitDescriptionKitsune"],
+    tag#leshy, .tag[data-slug="leshy"], .tag[data-tooltip="PF2E.TraitDescriptionLeshy"],
+    tag#lizardfolk, .tag[data-slug="lizardfolk"], .tag[data-tooltip="PF2E.TraitDescriptionLizardfolk"],
+    tag#locathah, .tag[data-slug="locathah"], .tag[data-tooltip="undefined"],
+    tag#merfolk, .tag[data-slug="merfolk"], .tag[data-tooltip="PF2E.TraitDescriptionMerfolk"],
+    tag#minotaur, .tag[data-slug="minotaur"], .tag[data-tooltip="PF2E.TraitDescriptionMinotaur"],
+    tag#naari, .tag[data-slug="naari"], .tag[data-tooltip="PF2E.TraitDescriptionNaari"],
+    tag#nagaji, .tag[data-slug="nagaji"], .tag[data-tooltip="PF2E.TraitDescriptionNagaji"],
+    tag#nephilim, .tag[data-slug="nephilim"], .tag[data-tooltip="PF2E.TraitDescriptionNephilim"],
+    tag#orc, .tag[data-slug="orc"], .tag[data-tooltip="PF2E.TraitDescriptionOrc"],
+    tag#oread, .tag[data-slug="oread"], .tag[data-tooltip="PF2E.TraitDescriptionOread"],
+    tag#poppet, .tag[data-slug="poppet"], .tag[data-tooltip="PF2E.TraitDescriptionPoppet"],
+    tag#reflection, .tag[data-slug="reflection"], .tag[data-tooltip="PF2E.TraitDescriptionReflection"],
+    tag#samsaran, .tag[data-slug="samsaran"], .tag[data-tooltip="PF2E.TraitDescriptionSamsaran"],
+    tag#sarangay, .tag[data-slug="sarangay"], .tag[data-tooltip="undefined"],
+    tag#shisk, .tag[data-slug="shisk"], .tag[data-tooltip="PF2E.TraitDescriptionShisk"],
+    tag#shoony, .tag[data-slug="shoony"], .tag[data-tooltip="PF2E.TraitDescriptionShoony"],
+    tag#strix, .tag[data-slug="strix"], .tag[data-tooltip="PF2E.TraitDescriptionStrix"],
+    tag#suli, .tag[data-slug="suli"], .tag[data-tooltip="PF2E.TraitDescriptionSuli"],
+    tag#surki, .tag[data-slug="surki"], .tag[data-tooltip="PF2E.TraitDescriptionSurki"],
+    tag#sylph, .tag[data-slug="sylph"], .tag[data-tooltip="PF2E.TraitDescriptionSylph"],
+    tag#talos, .tag[data-slug="talos"], .tag[data-tooltip="PF2E.TraitDescriptionTalos"],
+    tag#tanuki, .tag[data-slug="tanuki"], .tag[data-tooltip="undefined"],
+    tag#undine, .tag[data-slug="undine"], .tag[data-tooltip="PF2E.TraitDescriptionUndine"],
+    tag#vanara, .tag[data-slug="vanara"], .tag[data-tooltip="PF2E.TraitDescriptionVanara"],
+    tag#vishkanya, .tag[data-slug="vishkanya"], .tag[data-tooltip="PF2E.TraitDescriptionVishkanya"],
+    tag#wayang, .tag[data-slug="wayang"], .tag[data-tooltip="PF2E.TraitDescriptionWayang"],
+    tag#yaksha, .tag[data-slug="yaksha"], .tag[data-tooltip="undefined"],
+    tag#yaoguai, .tag[data-slug="yaoguai"], .tag[data-tooltip="undefined"],
+    tag#alchemist, .tag[data-slug="alchemist"], .tag[data-tooltip="PF2E.TraitDescriptionAlchemist"],
+    tag#animist, .tag[data-slug="animist"], .tag[data-tooltip="PF2E.TraitDescriptionAnimist"],
+    tag#barbarian, .tag[data-slug="barbarian"], .tag[data-tooltip="PF2E.TraitDescriptionBarbarian"],
+    tag#bard, .tag[data-slug="bard"], .tag[data-tooltip="PF2E.TraitDescriptionBard"],
+    tag#champion, .tag[data-slug="champion"], .tag[data-tooltip="PF2E.TraitDescriptionChampion"],
+    tag#cleric, .tag[data-slug="cleric"], .tag[data-tooltip="PF2E.TraitDescriptionCleric"],
+    tag#commander, .tag[data-slug="commander"], .tag[data-tooltip="undefined"],
+    tag#druid, .tag[data-slug="druid"], .tag[data-tooltip="PF2E.TraitDescriptionDruid"],
+    tag#exemplar, .tag[data-slug="exemplar"], .tag[data-tooltip="PF2E.TraitDescriptionExemplar"],
+    tag#fighter, .tag[data-slug="fighter"], .tag[data-tooltip="PF2E.TraitDescriptionFighter"],
+    tag#guardian, .tag[data-slug="guardian"], .tag[data-tooltip="undefined"],
+    tag#gunslinger, .tag[data-slug="gunslinger"], .tag[data-tooltip="PF2E.TraitDescriptionGunslinger"],
+    tag#inventor, .tag[data-slug="inventor"], .tag[data-tooltip="PF2E.TraitDescriptionInventor"],
+    tag#investigator, .tag[data-slug="investigator"], .tag[data-tooltip="PF2E.TraitDescriptionInvestigator"],
+    tag#kineticist, .tag[data-slug="kineticist"], .tag[data-tooltip="PF2E.TraitDescriptionKineticist"],
+    tag#magus, .tag[data-slug="magus"], .tag[data-tooltip="PF2E.TraitDescriptionMagus"],
+    tag#monk, .tag[data-slug="monk"], .tag[data-tooltip="PF2E.TraitDescriptionMonk"],
+    tag#oracle, .tag[data-slug="oracle"], .tag[data-tooltip="PF2E.TraitDescriptionOracle"],
+    tag#psychic, .tag[data-slug="psychic"], .tag[data-tooltip="PF2E.TraitDescriptionPsychic"],
+    tag#ranger, .tag[data-slug="ranger"], .tag[data-tooltip="PF2E.TraitDescriptionRanger"],
+    tag#rogue, .tag[data-slug="rogue"], .tag[data-tooltip="PF2E.TraitDescriptionRogue"],
+    tag#sorcerer, .tag[data-slug="sorcerer"], .tag[data-tooltip="PF2E.TraitDescriptionSorcerer"],
+    tag#summoner, .tag[data-slug="summoner"], .tag[data-tooltip="PF2E.TraitDescriptionSummoner"],
+    tag#swashbuckler, .tag[data-slug="swashbuckler"], .tag[data-tooltip="PF2E.TraitDescriptionSwashbuckler"],
+    tag#thaumaturge, .tag[data-slug="thaumaturge"], .tag[data-tooltip="PF2E.TraitDescriptionThaumaturge"],
+    tag#witch, .tag[data-slug="witch"], .tag[data-tooltip="PF2E.TraitDescriptionWitch"],
+    tag#wizard, .tag[data-slug="wizard"], .tag[data-tooltip="PF2E.TraitDescriptionWizard"],
+    tag#aberration, .tag[data-slug="aberration"], .tag[data-tooltip="PF2E.TraitDescriptionAberration"],
+    tag#animal, .tag[data-slug="animal"], .tag[data-tooltip="PF2E.TraitDescriptionAnimal"],
+    tag#astral, .tag[data-slug="astral"], .tag[data-tooltip="PF2E.TraitDescriptionAstral"],
+    tag#beast, .tag[data-slug="beast"], .tag[data-tooltip="PF2E.TraitDescriptionBeast"],
+    tag#celestial, .tag[data-slug="celestial"], .tag[data-tooltip="PF2E.TraitDescriptionCelestial"],
+    tag#construct, .tag[data-slug="construct"], .tag[data-tooltip="PF2E.TraitDescriptionConstruct"],
+    tag#dragon, .tag[data-slug="dragon"], .tag[data-tooltip="PF2E.TraitDescriptionDragon"],
+    tag#dream, .tag[data-slug="dream"], .tag[data-tooltip="PF2E.TraitDescriptionDream"],
+    tag#elemental, .tag[data-slug="elemental"], .tag[data-tooltip="PF2E.TraitDescriptionElemental"],
+    tag#ethereal, .tag[data-slug="ethereal"], .tag[data-tooltip="PF2E.TraitDescriptionEthereal"],
+    tag#experiment, .tag[data-slug="experiment"], .tag[data-tooltip="PF2E.TraitDescriptionExperiment"],
+    tag#fey, .tag[data-slug="fey"], .tag[data-tooltip="PF2E.TraitDescriptionFey"],
+    tag#fiend, .tag[data-slug="fiend"], .tag[data-tooltip="PF2E.TraitDescriptionFiend"],
+    tag#fungus, .tag[data-slug="fungus"], .tag[data-tooltip="PF2E.TraitDescriptionFungus"],
+    tag#giant, .tag[data-slug="giant"], .tag[data-tooltip="PF2E.TraitDescriptionGiant"],
+    tag#humanoid, .tag[data-slug="humanoid"], .tag[data-tooltip="PF2E.TraitDescriptionHumanoid"],
+    tag#monitor, .tag[data-slug="monitor"], .tag[data-tooltip="PF2E.TraitDescriptionMonitor"],
+    tag#ooze, .tag[data-slug="ooze"], .tag[data-tooltip="PF2E.TraitDescriptionOoze"],
+    tag#petitioner, .tag[data-slug="petitioner"], .tag[data-tooltip="undefined"],
+    tag#plant, .tag[data-slug="plant"], .tag[data-tooltip="PF2E.TraitDescriptionPlant"],
+    tag#sea-devil, .tag[data-slug="sea-devil"], .tag[data-tooltip="PF2E.TraitDescriptionSeaDevil"],
+    tag#shade, .tag[data-slug="shade"], .tag[data-tooltip="undefined"],
+    tag#spirit, .tag[data-slug="spirit"], .tag[data-tooltip="PF2E.TraitDescriptionSpirit"],
+    tag#time, .tag[data-slug="time"], .tag[data-tooltip="PF2E.TraitDescriptionTime"] {
+        background: var(--background-pf2ett-origin);
+        border: var(--border-pf2ett-origin);
+        order: var(--order-pf2ett-origin);
+
+        > div::before {
+            box-shadow: 0 0 0 var(--tag-inset-shadow-size) var(--background-pf2ett-origin) inset;
+        }
+    }
+
+    tag#pf2ett-sample-sub-origin, .tag[data-slug="pf2ett-sample-sub-origin"], .tag[data-tooltip="undefined"],
+    tag#arcane, .tag[data-slug="arcane"], .tag[data-tooltip="PF2E.TraitDescriptionArcane"],
+    tag#divine, .tag[data-slug="divine"], .tag[data-tooltip="PF2E.TraitDescriptionDivine"],
+    tag#occult, .tag[data-slug="occult"], .tag[data-tooltip="PF2E.TraitDescriptionOccult"],
+    tag#primal, .tag[data-slug="primal"], .tag[data-tooltip="PF2E.TraitDescriptionPrimal"],
+    tag#aeon, .tag[data-slug="aeon"], .tag[data-tooltip="PF2E.TraitDescriptionAeon"],
+    tag#aesir, .tag[data-slug="aesir"], .tag[data-tooltip="PF2E.TraitDescriptionAesir"],
+    tag#agathion, .tag[data-slug="agathion"], .tag[data-tooltip="PF2E.TraitDescriptionAgathion"],
+    tag#angel, .tag[data-slug="angel"], .tag[data-tooltip="PF2E.TraitDescriptionAngel"],
+    tag#anugobu, .tag[data-slug="anugobu"], .tag[data-tooltip="undefined"],
+    tag#archon, .tag[data-slug="archon"], .tag[data-tooltip="PF2E.TraitDescriptionArchon"],
+    tag#asura, .tag[data-slug="asura"], .tag[data-tooltip="PF2E.TraitDescriptionAsura"],
+    tag#azarketi, .tag[data-slug="azarketi"], .tag[data-tooltip="PF2E.TraitDescriptionAzarketi"],
+    tag#azata, .tag[data-slug="azata"], .tag[data-tooltip="PF2E.TraitDescriptionAzata"],
+    tag#blight, .tag[data-slug="blight"], .tag[data-tooltip="PF2E.TraitDescriptionBlight"],
+    tag#boggard, .tag[data-slug="boggard"], .tag[data-tooltip="PF2E.TraitDescriptionBoggard"],
+    tag#bugbear, .tag[data-slug="bugbear"], .tag[data-tooltip="PF2E.TraitDescriptionBugbear"],
+    tag#caligni, .tag[data-slug="caligni"], .tag[data-tooltip="PF2E.TraitDescriptionCaligni"],
+    tag#catfolk, .tag[data-slug="catfolk"], .tag[data-tooltip="PF2E.TraitDescriptionCatfolk"],
+    tag#charau-ka, .tag[data-slug="charau-ka"], .tag[data-tooltip="PF2E.TraitDescriptionCharauKa"],
+    tag#couatl, .tag[data-slug="couatl"], .tag[data-tooltip="undefined"],
+    tag#daemon, .tag[data-slug="daemon"], .tag[data-tooltip="PF2E.TraitDescriptionDaemon"],
+    tag#darvakka, .tag[data-slug="darvakka"], .tag[data-tooltip="PF2E.TraitDescriptionDarvakka"],
+    tag#demon, .tag[data-slug="demon"], .tag[data-tooltip="PF2E.TraitDescriptionDemon"],
+    tag#dero, .tag[data-slug="dero"], .tag[data-tooltip="PF2E.TraitDescriptionDero"],
+    tag#dhampir, .tag[data-slug="dhampir"], .tag[data-tooltip="PF2E.TraitDescriptionDhampir"],
+    tag#dinosaur, .tag[data-slug="dinosaur"], .tag[data-tooltip="PF2E.TraitDescriptionDinosaur"],
+    tag#div, .tag[data-slug="div"], .tag[data-tooltip="PF2E.TraitDescriptionDiv"],
+    tag#drow, .tag[data-slug="drow"], .tag[data-tooltip="undefined"],
+    tag#duskwalker, .tag[data-slug="duskwalker"], .tag[data-tooltip="PF2E.TraitDescriptionDuskwalker"],
+    tag#formian, .tag[data-slug="formian"], .tag[data-tooltip="undefined"],
+    tag#genie, .tag[data-slug="genie"], .tag[data-tooltip="PF2E.TraitDescriptionGenie"],
+    tag#ghost, .tag[data-slug="ghost"], .tag[data-tooltip="PF2E.TraitDescriptionGhost"],
+    tag#ghoul, .tag[data-slug="ghoul"], .tag[data-tooltip="PF2E.TraitDescriptionGhoul"],
+    tag#ghul, .tag[data-slug="ghul"], .tag[data-tooltip="PF2E.TraitDescriptionGhul"],
+    tag#gigas, .tag[data-slug="gigas"], .tag[data-tooltip="undefined"],
+    tag#graveknight, .tag[data-slug="graveknight"], .tag[data-tooltip="undefined"],
+    tag#gremlin, .tag[data-slug="gremlin"], .tag[data-tooltip="PF2E.TraitDescriptionGremlin"],
+    tag#grioth, .tag[data-slug="grioth"], .tag[data-tooltip="PF2E.TraitDescriptionGrioth"],
+    tag#hag, .tag[data-slug="hag"], .tag[data-tooltip="PF2E.TraitDescriptionHag"],
+    tag#hantu, .tag[data-slug="hantu"], .tag[data-tooltip="undefined"],
+    tag#herald, .tag[data-slug="herald"], .tag[data-tooltip="PF2E.TraitDescriptionHerald"],
+    tag#hobgoblin, .tag[data-slug="hobgoblin"], .tag[data-tooltip="PF2E.TraitDescriptionHobgoblin"],
+    tag#hryngar, .tag[data-slug="hryngar"], .tag[data-tooltip="PF2E.TraitDescriptionHryngar"],
+    tag#ikeshti, .tag[data-slug="ikeshti"], .tag[data-tooltip="undefined"],
+    tag#inevitable, .tag[data-slug="inevitable"], .tag[data-tooltip="PF2E.TraitDescriptionInevitable"],
+    tag#kaiju, .tag[data-slug="kaiju"], .tag[data-tooltip="undefined"],
+    tag#kami, .tag[data-slug="kami"], .tag[data-tooltip="PF2E.TraitDescriptionKami"],
+    tag#kobold, .tag[data-slug="kobold"], .tag[data-tooltip="PF2E.TraitDescriptionKobold"],
+    tag#kovintus, .tag[data-slug="kovintus"], .tag[data-tooltip="PF2E.TraitDescriptionKovintus"],
+    tag#lilu, .tag[data-slug="lilu"], .tag[data-tooltip="undefined"],
+    tag#mindless, .tag[data-slug="mindless"], .tag[data-tooltip="PF2E.TraitDescriptionMindless"],
+    tag#morlock, .tag[data-slug="morlock"], .tag[data-tooltip="PF2E.TraitDescriptionMorlock"],
+    tag#mortic, .tag[data-slug="mortic"], .tag[data-tooltip="PF2E.TraitDescriptionMortic"],
+    tag#mummy, .tag[data-slug="mummy"], .tag[data-tooltip="PF2E.TraitDescriptionMummy"],
+    tag#munavri, .tag[data-slug="munavri"], .tag[data-tooltip="PF2E.TraitDescriptionMunavri"],
+    tag#mutant, .tag[data-slug="mutant"], .tag[data-tooltip="PF2E.TraitDescriptionMutant"],
+    tag#nindoru, .tag[data-slug="nindoru"], .tag[data-tooltip="PF2E.TraitDescriptionNindoru"],
+    tag#nymph, .tag[data-slug="nymph"], .tag[data-tooltip="PF2E.TraitDescriptionNymph"],
+    tag#oni, .tag[data-slug="oni"], .tag[data-tooltip="PF2E.TraitDescriptionOni"],
+    tag#paaridar, .tag[data-slug="paaridar"], .tag[data-tooltip="PF2E.TraitDescriptionPaaridar"],
+    tag#palinthanos, .tag[data-slug="palinthanos"], .tag[data-tooltip="PF2E.TraitDescriptionPalinthanos"],
+    tag#phantom, .tag[data-slug="phantom"], .tag[data-tooltip="PF2E.TraitDescriptionPhantom"],
+    tag#protean, .tag[data-slug="protean"], .tag[data-tooltip="PF2E.TraitDescriptionProtean"],
+    tag#psychopomp, .tag[data-slug="psychopomp"], .tag[data-tooltip="PF2E.TraitDescriptionPsychopomp"],
+    tag#qlippoth, .tag[data-slug="qlippoth"], .tag[data-tooltip="PF2E.TraitDescriptionQlippoth"],
+    tag#rakshasa, .tag[data-slug="rakshasa"], .tag[data-tooltip="undefined"],
+    tag#ratfolk, .tag[data-slug="ratfolk"], .tag[data-tooltip="PF2E.TraitDescriptionRatfolk"],
+    tag#sahkil, .tag[data-slug="sahkil"], .tag[data-tooltip="PF2E.TraitDescriptionSahkil"],
+    tag#devil, .tag[data-slug="devil"], .tag[data-tooltip="PF2E.TraitDescriptionDevil"],
+    tag#sedacthy, .tag[data-slug="sedacthy"], .tag[data-tooltip="PF2E.TraitDescriptionSedacthy"],
+    tag#serpentfolk, .tag[data-slug="serpentfolk"], .tag[data-tooltip="PF2E.TraitDescriptionSerpentfolk"],
+    tag#seugathi, .tag[data-slug="seugathi"], .tag[data-tooltip="undefined"],
+    tag#shabti, .tag[data-slug="shabti"], .tag[data-tooltip="PF2E.TraitDescriptionShabti"],
+    tag#siktempora, .tag[data-slug="siktempora"], .tag[data-tooltip="undefined"],
+    tag#skeleton, .tag[data-slug="skeleton"], .tag[data-tooltip="PF2E.TraitDescriptionSkeleton"],
+    tag#skelm, .tag[data-slug="skelm"], .tag[data-tooltip="PF2E.TraitDescriptionSkelm"],
+    tag#skulk, .tag[data-slug="skulk"], .tag[data-tooltip="PF2E.TraitDescriptionSkulk"],
+    tag#soulbound, .tag[data-slug="soulbound"], .tag[data-tooltip="PF2E.TraitDescriptionSoulbound"],
+    tag#sporeborn, .tag[data-slug="sporeborn"], .tag[data-tooltip="undefined"],
+    tag#spriggan, .tag[data-slug="spriggan"], .tag[data-tooltip="PF2E.TraitDescriptionSpriggan"],
+    tag#sprite, .tag[data-slug="sprite"], .tag[data-tooltip="PF2E.TraitDescriptionSprite"],
+    tag#stheno, .tag[data-slug="stheno"], .tag[data-tooltip="PF2E.TraitDescriptionStheno"],
+    tag#tane, .tag[data-slug="tane"], .tag[data-tooltip="PF2E.TraitDescriptionTane"],
+    tag#tanggal, .tag[data-slug="tanggal"], .tag[data-tooltip="PF2E.TraitDescriptionTanggal"],
+    tag#tengu, .tag[data-slug="tengu"], .tag[data-tooltip="PF2E.TraitDescriptionTengu"],
+    tag#titan, .tag[data-slug="titan"], .tag[data-tooltip="PF2E.TraitDescriptionTitan"],
+    tag#troll, .tag[data-slug="troll"], .tag[data-tooltip="PF2E.TraitDescriptionTroll"],
+    tag#urdefhan, .tag[data-slug="urdefhan"], .tag[data-tooltip="PF2E.TraitDescriptionUrdefhan"],
+    tag#vampire, .tag[data-slug="vampire"], .tag[data-tooltip="PF2E.TraitDescriptionVampire"],
+    tag#velstrac, .tag[data-slug="velstrac"], .tag[data-tooltip="PF2E.TraitDescriptionVelstrac"],
+    tag#werecreature, .tag[data-slug="werecreature"], .tag[data-tooltip="PF2E.TraitDescriptionWerecreature"],
+    tag#wight, .tag[data-slug="wight"], .tag[data-tooltip="PF2E.TraitDescriptionWight"],
+    tag#wild-hunt, .tag[data-slug="wild-hunt"], .tag[data-tooltip="undefined"],
+    tag#wraith, .tag[data-slug="wraith"], .tag[data-tooltip="PF2E.TraitDescriptionWraith"],
+    tag#wraithvine, .tag[data-slug="wraithvine"], .tag[data-tooltip="undefined"],
+    tag#wyrwood, .tag[data-slug="wyrwood"], .tag[data-tooltip="PF2E.TraitDescriptionWyrwood"],
+    tag#xulgath, .tag[data-slug="xulgath"], .tag[data-tooltip="PF2E.TraitDescriptionXulgath"],
+    tag#zombie, .tag[data-slug="zombie"], .tag[data-tooltip="PF2E.TraitDescriptionZombie"],
+    tag#shobhad, .tag[data-slug="shobhad"], .tag[data-tooltip="undefined"],
+    tag#pervasive-magic, .tag[data-slug="pervasive-magic"], .tag[data-tooltip="undefined"],
+    tag#stamina, .tag[data-slug="stamina"], .tag[data-tooltip="undefined"] {
+        background: var(--background-pf2ett-sub-origin);
+        border: var(--border-pf2ett-sub-origin);
+        order: var(--order-pf2ett-sub-origin);
+
+        > div::before {
+            box-shadow: 0 0 0 var(--tag-inset-shadow-size) var(--background-pf2ett-sub-origin) inset;
+        }
+    }
+
+    tag#pf2ett-sample-build-limitation, .tag[data-slug="pf2ett-sample-build-limitation"], .tag[data-tooltip="undefined"],
+    tag#apparition, .tag[data-slug="apparition"], .tag[data-tooltip="PF2E.TraitDescriptionApparition"],
+    tag#composite, .tag[data-slug="composite"], .tag[data-tooltip="PF2E.TraitDescriptionComposite"],
+    tag#eidolon, .tag[data-slug="eidolon"], .tag[data-tooltip="PF2E.TraitDescriptionEidolon"],
+    tag#evolution, .tag[data-slug="evolution"], .tag[data-tooltip="PF2E.TraitDescriptionEvolution"],
+    tag#ikon, .tag[data-slug="ikon"], .tag[data-tooltip="PF2E.TraitDescriptionIkon"],
+    tag#modification, .tag[data-slug="modification"], .tag[data-tooltip="PF2E.TraitDescriptionModification"],
+    tag#oath, .tag[data-slug="oath"], .tag[data-tooltip="PF2E.TraitDescriptionOath"],
+    tag#wandering, .tag[data-slug="wandering"], .tag[data-tooltip="PF2E.TraitDescriptionWandering"],
+    tag#adjustment, .tag[data-slug="adjustment"], .tag[data-tooltip="PF2E.TraitDescriptionAdjustment"],
+    tag#companion, .tag[data-slug="companion"], .tag[data-tooltip="PF2E.TraitDescriptionCompanion"],
+    tag#relic, .tag[data-slug="relic"], .tag[data-tooltip="PF2E.TraitDescriptionRelic"],
+    tag#aftermath, .tag[data-slug="aftermath"], .tag[data-tooltip="PF2E.TraitDescriptionAftermath"],
+    tag#dedication, .tag[data-slug="dedication"], .tag[data-tooltip="PF2E.TraitDescriptionDedication"],
+    tag#deviant, .tag[data-slug="deviant"], .tag[data-tooltip="PF2E.TraitDescriptionDeviant"],
+    tag#lineage, .tag[data-slug="lineage"], .tag[data-tooltip="undefined"],
+    tag#multiclass, .tag[data-slug="multiclass"], .tag[data-tooltip="PF2E.TraitDescriptionMulticlass"],
+    tag#reincarnated, .tag[data-slug="reincarnated"], .tag[data-tooltip="PF2E.TraitDescriptionReincarnated"],
+    tag#calling, .tag[data-slug="calling"], .tag[data-tooltip="PF2E.TraitDescriptionCalling"],
+    tag#destiny, .tag[data-slug="destiny"], .tag[data-tooltip="PF2E.TraitDescriptionDestiny"] {
+        background: var(--background-pf2ett-build-limitation);
+        border: var(--border-pf2ett-build-limitation);
+        order: var(--order-pf2ett-build-limitation);
+
+        > div::before {
+            box-shadow: 0 0 0 var(--tag-inset-shadow-size) var(--background-pf2ett-build-limitation) inset;
+        }
+    }
+
+    tag#pf2ett-sample-type-mechanic, .tag[data-slug="pf2ett-sample-type-mechanic"], .tag[data-tooltip="undefined"],
+    tag#impulse, .tag[data-slug="impulse"], .tag[data-tooltip="PF2E.TraitDescriptionImpulse"],
+    tag#tactic, .tag[data-slug="tactic"], .tag[data-tooltip="undefined"],
+    tag#tandem, .tag[data-slug="tandem"], .tag[data-tooltip="PF2E.TraitDescriptionTandem"],
+    tag#coda, .tag[data-slug="coda"], .tag[data-tooltip="PF2E.TraitDescriptionCoda"],
+    tag#consumable, .tag[data-slug="consumable"], .tag[data-tooltip="PF2E.TraitDescriptionConsumable"],
+    tag#saggorak, .tag[data-slug="saggorak"], .tag[data-tooltip="PF2E.TraitDescriptionSaggorak"],
+    tag#staff, .tag[data-slug="staff"], .tag[data-tooltip="PF2E.TraitDescriptionStaff"],
+    tag#cantrip, .tag[data-slug="cantrip"], .tag[data-tooltip="PF2E.TraitDescriptionCantrip"],
+    tag#downtime, .tag[data-slug="downtime"], .tag[data-tooltip="PF2E.TraitDescriptionDowntime"],
+    tag#exploration, .tag[data-slug="exploration"], .tag[data-tooltip="PF2E.TraitDescriptionExploration"],
+    tag#focus, .tag[data-slug="focus"], .tag[data-tooltip="PF2E.TraitDescriptionFocus"],
+    tag#kingdom, .tag[data-slug="kingdom"], .tag[data-tooltip="undefined"] {
+        background: var(--background-pf2ett-type-mechanic);
+        border: var(--border-pf2ett-type-mechanic);
+        order: var(--order-pf2ett-type-mechanic);
+
+        > div::before {
+            box-shadow: 0 0 0 var(--tag-inset-shadow-size) var(--background-pf2ett-type-mechanic) inset;
+        }
+    }
+
+    tag#pf2ett-sample-subtype-mechanic, .tag[data-slug="pf2ett-sample-subtype-mechanic"], .tag[data-tooltip="undefined"],
+    tag#amp, .tag[data-slug="amp"], .tag[data-tooltip="undefined"],
+    tag#bravado, .tag[data-slug="bravado"], .tag[data-tooltip="PF2E.TraitDescriptionBravado"],
+    tag#composition, .tag[data-slug="composition"], .tag[data-tooltip="PF2E.TraitDescriptionComposition"],
+    tag#cursebound, .tag[data-slug="cursebound"], .tag[data-tooltip="PF2E.TraitDescriptionCursebound"],
+    tag#finisher, .tag[data-slug="finisher"], .tag[data-tooltip="PF2E.TraitDescriptionFinisher"],
+    tag#hex, .tag[data-slug="hex"], .tag[data-tooltip="PF2E.TraitDescriptionHex"],
+    tag#infusion, .tag[data-slug="infusion"], .tag[data-tooltip="PF2E.TraitDescriptionInfusion"],
+    tag#litany, .tag[data-slug="litany"], .tag[data-tooltip="PF2E.TraitDescriptionLitany"],
+    tag#mindshift, .tag[data-slug="mindshift"], .tag[data-tooltip="PF2E.TraitDescriptionMindshift"],
+    tag#barding, .tag[data-slug="barding"], .tag[data-tooltip="undefined"],
+    tag#bomb, .tag[data-slug="bomb"], .tag[data-tooltip="PF2E.TraitDescriptionBomb"],
+    tag#bottled-breath, .tag[data-slug="bottled-breath"], .tag[data-tooltip="PF2E.TraitDescriptionBottledBreath"],
+    tag#catalyst, .tag[data-slug="catalyst"], .tag[data-tooltip="PF2E.TraitDescriptionCatalyst"],
+    tag#censer, .tag[data-slug="censer"], .tag[data-tooltip="PF2E.TraitDescriptionCenser"],
+    tag#contract, .tag[data-slug="contract"], .tag[data-tooltip="PF2E.TraitDescriptionContract"],
+    tag#expandable, .tag[data-slug="expandable"], .tag[data-tooltip="PF2E.TraitDescriptionExpandable"],
+    tag#figurehead, .tag[data-slug="figurehead"], .tag[data-tooltip="PF2E.TraitDescriptionFigurehead"],
+    tag#focused, .tag[data-slug="focused"], .tag[data-tooltip="PF2E.TraitDescriptionFocused"],
+    tag#fulu, .tag[data-slug="fulu"], .tag[data-tooltip="PF2E.TraitDescriptionFulu"],
+    tag#graft, .tag[data-slug="graft"], .tag[data-tooltip="PF2E.TraitDescriptionGraft"],
+    tag#grimoire, .tag[data-slug="grimoire"], .tag[data-tooltip="PF2E.TraitDescriptionGrimoire"],
+    tag#lozenge, .tag[data-slug="lozenge"], .tag[data-tooltip="PF2E.TraitDescriptionLozenge"],
+    tag#missive, .tag[data-slug="missive"], .tag[data-tooltip="PF2E.TraitDescriptionMissive"],
+    tag#mutagen, .tag[data-slug="mutagen"], .tag[data-tooltip="PF2E.TraitDescriptionMutagen"],
+    tag#scroll, .tag[data-slug="scroll"], .tag[data-tooltip="PF2E.TraitDescriptionScroll"],
+    tag#snare, .tag[data-slug="snare"], .tag[data-tooltip="PF2E.TraitDescriptionSnare"],
+    tag#spellgun, .tag[data-slug="spellgun"], .tag[data-tooltip="PF2E.TraitDescriptionSpellgun"],
+    tag#spellheart, .tag[data-slug="spellheart"], .tag[data-tooltip="PF2E.TraitDescriptionSpellheart"],
+    tag#structure, .tag[data-slug="structure"], .tag[data-tooltip="PF2E.TraitDescriptionStructure"],
+    tag#talisman, .tag[data-slug="talisman"], .tag[data-tooltip="PF2E.TraitDescriptionTalisman"],
+    tag#tattoo, .tag[data-slug="tattoo"], .tag[data-tooltip="PF2E.TraitDescriptionTattoo"],
+    tag#trap, .tag[data-slug="trap"], .tag[data-tooltip="PF2E.TraitDescriptionTrap"],
+    tag#wand, .tag[data-slug="wand"], .tag[data-tooltip="PF2E.TraitDescriptionWand"],
+    tag#whetstone, .tag[data-slug="whetstone"], .tag[data-tooltip="undefined"],
+    tag#attached, .tag[data-slug="attached"], .tag[data-tooltip="PF2E.TraitDescriptionAttached"],
+    tag#attached-to-shield, .tag[data-slug="attached-to-shield"], .tag[data-tooltip="PF2E.TraitDescriptionAttached"],
+    tag#attached-to-crossbow-or-firearm, .tag[data-slug="attached-to-crossbow-or-firearm"], .tag[data-tooltip="PF2E.TraitDescriptionAttached"],
+    tag#mounted, .tag[data-slug="mounted"], .tag[data-tooltip="PF2E.TraitDescriptionMounted"],
+    tag#portable, .tag[data-slug="portable"], .tag[data-tooltip="PF2E.TraitDescriptionPortable"],
+    tag#vehicular, .tag[data-slug="vehicular"], .tag[data-tooltip="PF2E.TraitDescriptionVehicular"],
+    tag#contingency, .tag[data-slug="contingency"], .tag[data-tooltip="PF2E.TraitDescriptionContingency"],
+    tag#incarnate, .tag[data-slug="incarnate"], .tag[data-tooltip="PF2E.TraitDescriptionIncarnate"],
+    tag#possession, .tag[data-slug="possession"], .tag[data-tooltip="PF2E.TraitDescriptionPossession"],
+    tag#spellshape, .tag[data-slug="spellshape"], .tag[data-tooltip="PF2E.TraitDescriptionSpellshape"],
+    tag#summon, .tag[data-slug="summon"], .tag[data-tooltip="PF2E.TraitDescriptionSummon"],
+    tag#tea, .tag[data-slug="tea"], .tag[data-tooltip="PF2E.TraitDescriptionTea"],
+    tag#trial, .tag[data-slug="trial"], .tag[data-tooltip="undefined"],
+    tag#maneuver, .tag[data-slug="maneuver"], .tag[data-tooltip="undefined"],
+    tag#morale, .tag[data-slug="morale"], .tag[data-tooltip="undefined"] {
+        background: var(--background-pf2ett-subtype-mechanic);
+        border: var(--border-pf2ett-subtype-mechanic);
+        order: var(--order-pf2ett-subtype-mechanic);
+
+        > div::before {
+            box-shadow: 0 0 0 var(--tag-inset-shadow-size) var(--background-pf2ett-subtype-mechanic) inset;
+        }
+    }
+
+    tag#pf2ett-sample-important-mechanic, .tag[data-slug="pf2ett-sample-important-mechanic"], .tag[data-tooltip="undefined"],
+    tag#additive, .tag[data-slug="additive"], .tag[data-tooltip="PF2E.TraitDescriptionAdditive"],
+    tag#additive0, .tag[data-slug="additive0"], .tag[data-tooltip="PF2E.TraitDescriptionAdditive"],
+    tag#additive1, .tag[data-slug="additive1"], .tag[data-tooltip="PF2E.TraitDescriptionAdditive"],
+    tag#additive2, .tag[data-slug="additive2"], .tag[data-tooltip="PF2E.TraitDescriptionAdditive"],
+    tag#additive3, .tag[data-slug="additive3"], .tag[data-tooltip="PF2E.TraitDescriptionAdditive"],
+    tag#coagulant, .tag[data-slug="coagulant"], .tag[data-tooltip="PF2E.TraitDescriptionCoagulant"],
+    tag#overflow, .tag[data-slug="overflow"], .tag[data-tooltip="PF2E.TraitDescriptionOverflow"],
+    tag#psyche, .tag[data-slug="psyche"], .tag[data-tooltip="PF2E.TraitDescriptionPsyche"],
+    tag#rage, .tag[data-slug="rage"], .tag[data-tooltip="PF2E.TraitDescriptionRage"],
+    tag#stance, .tag[data-slug="stance"], .tag[data-tooltip="PF2E.TraitDescriptionStance"],
+    tag#transcendence, .tag[data-slug="transcendence"], .tag[data-tooltip="PF2E.TraitDescriptionTranscendence"],
+    tag#unstable, .tag[data-slug="unstable"], .tag[data-tooltip="PF2E.TraitDescriptionUnstable"],
+    tag#curse, .tag[data-slug="curse"], .tag[data-tooltip="PF2E.TraitDescriptionCurse"],
+    tag#virulent, .tag[data-slug="virulent"], .tag[data-tooltip="PF2E.TraitDescriptionVirulent"],
+    tag#apex, .tag[data-slug="apex"], .tag[data-tooltip="PF2E.TraitDescriptionApex"],
+    tag#cursed, .tag[data-slug="cursed"], .tag[data-tooltip="PF2E.TraitDescriptionCursed"],
+    tag#drug, .tag[data-slug="drug"], .tag[data-tooltip="PF2E.TraitDescriptionDrug"],
+    tag#invested, .tag[data-slug="invested"], .tag[data-tooltip="PF2E.TraitDescriptionInvested"],
+    tag#bulwark, .tag[data-slug="bulwark"], .tag[data-tooltip="PF2E.TraitDescriptionBulwark"],
+    tag#hindering, .tag[data-slug="hindering"], .tag[data-tooltip="PF2E.TraitDescriptionHindering"],
+    tag#inscribed, .tag[data-slug="inscribed"], .tag[data-tooltip="PF2E.TraitDescriptionInscribed"],
+    tag#ponderous, .tag[data-slug="ponderous"], .tag[data-tooltip="PF2E.TraitDescriptionPonderous"],
+    tag#deflecting-bludgeoning, .tag[data-slug="deflecting-bludgeoning"], .tag[data-tooltip="PF2E.TraitDescriptionDeflecting"],
+    tag#deflecting-piercing, .tag[data-slug="deflecting-piercing"], .tag[data-tooltip="undefined"],
+    tag#deflecting-slashing, .tag[data-slug="deflecting-slashing"], .tag[data-tooltip="PF2E.TraitDescriptionDeflecting"],
+    tag#deflecting-physical-ranged, .tag[data-slug="deflecting-physical-ranged"], .tag[data-tooltip="PF2E.TraitDescriptionDeflecting"],
+    tag#harnessed, .tag[data-slug="harnessed"], .tag[data-tooltip="PF2E.TraitDescriptionHarnessed"],
+    tag#hefty-2, .tag[data-slug="hefty-2"], .tag[data-tooltip="undefined"],
+    tag#cobbled, .tag[data-slug="cobbled"], .tag[data-tooltip="PF2E.TraitDescriptionCobbled"],
+    tag#shoddy, .tag[data-slug="shoddy"], .tag[data-tooltip="undefined"],
+    tag#death, .tag[data-slug="death"], .tag[data-tooltip="PF2E.TraitDescriptionDeath"],
+    tag#flourish, .tag[data-slug="flourish"], .tag[data-tooltip="PF2E.TraitDescriptionFlourish"],
+    tag#incapacitation, .tag[data-slug="incapacitation"], .tag[data-tooltip="PF2E.TraitDescriptionIncapacitation"],
+    tag#linguistic, .tag[data-slug="linguistic"], .tag[data-tooltip="PF2E.TraitDescriptionLinguistic"],
+    tag#minion, .tag[data-slug="minion"], .tag[data-tooltip="PF2E.TraitDescriptionMinion"],
+    tag#press, .tag[data-slug="press"], .tag[data-tooltip="PF2E.TraitDescriptionPress"],
+    tag#reckless, .tag[data-slug="reckless"], .tag[data-tooltip="undefined"],
+    tag#summoned, .tag[data-slug="summoned"], .tag[data-tooltip="PF2E.TraitDescriptionSummoned"],
+    tag#mythic, .tag[data-slug="mythic"], .tag[data-tooltip="PF2E.TraitDescriptionMythic"],
+    tag#undead, .tag[data-slug="undead"], .tag[data-tooltip="PF2E.TraitDescriptionUndead"],
+    tag#golem, .tag[data-slug="golem"], .tag[data-tooltip="undefined"],
+    tag#incorporeal, .tag[data-slug="incorporeal"], .tag[data-tooltip="PF2E.TraitDescriptionIncorporeal"],
+    tag#swarm, .tag[data-slug="swarm"], .tag[data-tooltip="PF2E.TraitDescriptionSwarm"],
+    tag#troop, .tag[data-slug="troop"], .tag[data-tooltip="PF2E.TraitDescriptionTroop"],
+    tag#certain-kill, .tag[data-slug="certain-kill"], .tag[data-tooltip="PF2E.TraitDescriptionCertainKill"],
+    tag#true-name, .tag[data-slug="true-name"], .tag[data-tooltip="PF2E.TraitDescriptionTrueName"],
+    tag#crew, .tag[data-slug="crew"], .tag[data-tooltip="undefined"] {
+        background: var(--background-pf2ett-important-mechanic);
+        border: var(--border-pf2ett-important-mechanic);
+        order: var(--order-pf2ett-important-mechanic);
+
+        > div::before {
+            box-shadow: 0 0 0 var(--tag-inset-shadow-size) var(--background-pf2ett-important-mechanic) inset;
+        }
+    }
+
+    tag#pf2ett-sample-important-mechanic-outside-chat, .tag[data-slug="pf2ett-sample-important-mechanic-outside-chat"], .tag[data-tooltip="undefined"],
+    tag#agile, .tag[data-slug="agile"], .tag[data-tooltip="PF2E.TraitDescriptionAgile"],
+    tag#backstabber, .tag[data-slug="backstabber"], .tag[data-tooltip="PF2E.TraitDescriptionBackstabber"],
+    tag#backswing, .tag[data-slug="backswing"], .tag[data-tooltip="PF2E.TraitDescriptionBackswing"],
+    tag#brutal, .tag[data-slug="brutal"], .tag[data-tooltip="PF2E.TraitDescriptionBrutal"],
+    tag#combination, .tag[data-slug="combination"], .tag[data-tooltip="PF2E.TraitDescriptionCombination"],
+    tag#critical-fusion, .tag[data-slug="critical-fusion"], .tag[data-tooltip="PF2E.TraitDescriptionCriticalFusion"],
+    tag#deadly-d4, .tag[data-slug="deadly-d4"], .tag[data-tooltip="PF2E.TraitDescriptionDeadly"],
+    tag#deadly-d6, .tag[data-slug="deadly-d6"], .tag[data-tooltip="PF2E.TraitDescriptionDeadly"],
+    tag#deadly-d8, .tag[data-slug="deadly-d8"], .tag[data-tooltip="PF2E.TraitDescriptionDeadly"],
+    tag#deadly-d10, .tag[data-slug="deadly-d10"], .tag[data-tooltip="PF2E.TraitDescriptionDeadly"],
+    tag#deadly-d12, .tag[data-slug="deadly-d12"], .tag[data-tooltip="PF2E.TraitDescriptionDeadly"],
+    tag#double-barrel, .tag[data-slug="double-barrel"], .tag[data-tooltip="PF2E.TraitDescriptionDoubleBarrel"],
+    tag#fatal-aim-d10, .tag[data-slug="fatal-aim-d10"], .tag[data-tooltip="PF2E.TraitDescriptionFatalAim"],
+    tag#fatal-aim-d12, .tag[data-slug="fatal-aim-d12"], .tag[data-tooltip="PF2E.TraitDescriptionFatalAim"],
+    tag#fatal-d8, .tag[data-slug="fatal-d8"], .tag[data-tooltip="PF2E.TraitDescriptionFatal"],
+    tag#fatal-d10, .tag[data-slug="fatal-d10"], .tag[data-tooltip="PF2E.TraitDescriptionFatal"],
+    tag#fatal-d12, .tag[data-slug="fatal-d12"], .tag[data-tooltip="PF2E.TraitDescriptionFatal"],
+    tag#finesse, .tag[data-slug="finesse"], .tag[data-tooltip="PF2E.TraitDescriptionFinesse"],
+    tag#forceful, .tag[data-slug="forceful"], .tag[data-tooltip="PF2E.TraitDescriptionForceful"],
+    tag#free-hand, .tag[data-slug="free-hand"], .tag[data-tooltip="PF2E.TraitDescriptionFreeHand"],
+    tag#injection, .tag[data-slug="injection"], .tag[data-tooltip="PF2E.TraitDescriptionInjection"],
+    tag#improvised, .tag[data-slug="improvised"], .tag[data-tooltip="undefined"],
+    tag#kickback, .tag[data-slug="kickback"], .tag[data-tooltip="PF2E.TraitDescriptionKickback"],
+    tag#propulsive, .tag[data-slug="propulsive"], .tag[data-tooltip="PF2E.TraitDescriptionPropulsive"],
+    tag#reach, .tag[data-slug="reach"], .tag[data-tooltip="PF2E.TraitDescriptionReach"],
+    tag#repeating, .tag[data-slug="repeating"], .tag[data-tooltip="PF2E.TraitDescriptionRepeating"],
+    tag#scatter-5, .tag[data-slug="scatter-5"], .tag[data-tooltip="PF2E.TraitDescriptionScatter"],
+    tag#scatter-10, .tag[data-slug="scatter-10"], .tag[data-tooltip="PF2E.TraitDescriptionScatter"],
+    tag#scatter-15, .tag[data-slug="scatter-15"], .tag[data-tooltip="PF2E.TraitDescriptionScatter"],
+    tag#scatter-20, .tag[data-slug="scatter-20"], .tag[data-tooltip="PF2E.TraitDescriptionScatter"],
+    tag#sweep, .tag[data-slug="sweep"], .tag[data-tooltip="PF2E.TraitDescriptionSweep"],
+    tag#tearing, .tag[data-slug="tearing"], .tag[data-tooltip="PF2E.TraitDescriptionTearing"],
+    tag#thrown, .tag[data-slug="thrown"], .tag[data-tooltip="PF2E.TraitDescriptionThrown"],
+    tag#thrown-10, .tag[data-slug="thrown-10"], .tag[data-tooltip="PF2E.TraitDescriptionThrown"],
+    tag#thrown-15, .tag[data-slug="thrown-15"], .tag[data-tooltip="PF2E.TraitDescriptionThrown"],
+    tag#thrown-20, .tag[data-slug="thrown-20"], .tag[data-tooltip="PF2E.TraitDescriptionThrown"],
+    tag#thrown-30, .tag[data-slug="thrown-30"], .tag[data-tooltip="PF2E.TraitDescriptionThrown"],
+    tag#thrown-40, .tag[data-slug="thrown-40"], .tag[data-tooltip="PF2E.TraitDescriptionThrown"],
+    tag#thrown-50, .tag[data-slug="thrown-50"], .tag[data-tooltip="PF2E.TraitDescriptionThrown"],
+    tag#thrown-60, .tag[data-slug="thrown-60"], .tag[data-tooltip="PF2E.TraitDescriptionThrown"],
+    tag#thrown-80, .tag[data-slug="thrown-80"], .tag[data-tooltip="PF2E.TraitDescriptionThrown"],
+    tag#thrown-100, .tag[data-slug="thrown-100"], .tag[data-tooltip="PF2E.TraitDescriptionThrown"],
+    tag#thrown-200, .tag[data-slug="thrown-200"], .tag[data-tooltip="PF2E.TraitDescriptionThrown"],
+    tag#training, .tag[data-slug="training"], .tag[data-tooltip="PF2E.TraitDescriptionTraining"],
+    tag#twin, .tag[data-slug="twin"], .tag[data-tooltip="PF2E.TraitDescriptionTwin"],
+    tag#two-hand-d6, .tag[data-slug="two-hand-d6"], .tag[data-tooltip="PF2E.TraitDescriptionTwoHand"],
+    tag#two-hand-d8, .tag[data-slug="two-hand-d8"], .tag[data-tooltip="PF2E.TraitDescriptionTwoHand"],
+    tag#two-hand-d10, .tag[data-slug="two-hand-d10"], .tag[data-tooltip="PF2E.TraitDescriptionTwoHand"],
+    tag#two-hand-d12, .tag[data-slug="two-hand-d12"], .tag[data-tooltip="PF2E.TraitDescriptionTwoHand"],
+    tag#unarmed, .tag[data-slug="unarmed"], .tag[data-tooltip="PF2E.TraitDescriptionUnarmed"],
+    tag#venomous, .tag[data-slug="venomous"], .tag[data-tooltip="PF2E.TraitDescriptionVenomous"],
+    tag#volley-20, .tag[data-slug="volley-20"], .tag[data-tooltip="PF2E.TraitDescriptionVolley"],
+    tag#volley-30, .tag[data-slug="volley-30"], .tag[data-tooltip="PF2E.TraitDescriptionVolley"],
+    tag#volley-50, .tag[data-slug="volley-50"], .tag[data-tooltip="PF2E.TraitDescriptionVolley"],
+    tag#volley-60, .tag[data-slug="volley-60"], .tag[data-tooltip="PF2E.TraitDescriptionVolley"],
+    tag#range-increment-10, .tag[data-slug="range-increment-10"], .tag[data-tooltip="PF2E.TraitDescriptionRange"],
+    tag#range-increment-15, .tag[data-slug="range-increment-15"], .tag[data-tooltip="PF2E.TraitDescriptionRange"],
+    tag#range-increment-20, .tag[data-slug="range-increment-20"], .tag[data-tooltip="PF2E.TraitDescriptionRange"],
+    tag#range-increment-30, .tag[data-slug="range-increment-30"], .tag[data-tooltip="PF2E.TraitDescriptionRange"],
+    tag#range-increment-40, .tag[data-slug="range-increment-40"], .tag[data-tooltip="PF2E.TraitDescriptionRange"],
+    tag#range-increment-50, .tag[data-slug="range-increment-50"], .tag[data-tooltip="PF2E.TraitDescriptionRange"],
+    tag#range-increment-60, .tag[data-slug="range-increment-60"], .tag[data-tooltip="PF2E.TraitDescriptionRange"],
+    tag#range-increment-80, .tag[data-slug="range-increment-80"], .tag[data-tooltip="PF2E.TraitDescriptionRange"],
+    tag#range-increment-100, .tag[data-slug="range-increment-100"], .tag[data-tooltip="PF2E.TraitDescriptionRange"],
+    tag#range-increment-120, .tag[data-slug="range-increment-120"], .tag[data-tooltip="PF2E.TraitDescriptionRange"],
+    tag#range-increment-150, .tag[data-slug="range-increment-150"], .tag[data-tooltip="PF2E.TraitDescriptionRange"],
+    tag#range-increment-200, .tag[data-slug="range-increment-200"], .tag[data-tooltip="PF2E.TraitDescriptionRange"],
+    tag#range-increment-300, .tag[data-slug="range-increment-300"], .tag[data-tooltip="PF2E.TraitDescriptionRange"],
+    tag#range-increment-500, .tag[data-slug="range-increment-500"], .tag[data-tooltip="undefined"],
+    tag#attack, .tag[data-slug="attack"], .tag[data-tooltip="PF2E.TraitDescriptionAttack"],
+    tag#splash, .tag[data-slug="splash"], .tag[data-tooltip="PF2E.TraitDescriptionSplash"],
+    tag#subtle, .tag[data-slug="subtle"], .tag[data-tooltip="PF2E.TraitDescriptionSubtle"] {
+        background: var(--background-pf2ett-important-mechanic-outside-chat);
+        border: var(--border-pf2ett-important-mechanic-outside-chat);
+        order: var(--order-pf2ett-important-mechanic-outside-chat);
+
+        > div::before {
+            box-shadow: 0 0 0 var(--tag-inset-shadow-size) var(--background-pf2ett-important-mechanic-outside-chat) inset;
+        }
+    }
+
+    tag#pf2ett-sample-occasional-mechanic, .tag[data-slug="pf2ett-sample-occasional-mechanic"], .tag[data-tooltip="undefined"],
+    tag#infused, .tag[data-slug="infused"], .tag[data-tooltip="PF2E.TraitDescriptionInfused"],
+    tag#social, .tag[data-slug="social"], .tag[data-tooltip="PF2E.TraitDescriptionSocial"],
+    tag#vigilante, .tag[data-slug="vigilante"], .tag[data-tooltip="PF2E.TraitDescriptionVigilante"],
+    tag#clockwork, .tag[data-slug="clockwork"], .tag[data-tooltip="PF2E.TraitDescriptionClockwork"],
+    tag#adjusted, .tag[data-slug="adjusted"], .tag[data-tooltip="PF2E.TraitDescriptionAdjusted"],
+    tag#aquadynamic, .tag[data-slug="aquadynamic"], .tag[data-tooltip="PF2E.TraitDescriptionAquadynamic"],
+    tag#comfort, .tag[data-slug="comfort"], .tag[data-tooltip="PF2E.TraitDescriptionComfort"],
+    tag#entrench-melee, .tag[data-slug="entrench-melee"], .tag[data-tooltip="PF2E.TraitDescriptionEntrench"],
+    tag#entrench-ranged, .tag[data-slug="entrench-ranged"], .tag[data-tooltip="PF2E.TraitDescriptionEntrench"],
+    tag#flexible, .tag[data-slug="flexible"], .tag[data-tooltip="PF2E.TraitDescriptionFlexible"],
+    tag#laminar, .tag[data-slug="laminar"], .tag[data-tooltip="PF2E.TraitDescriptionLaminar"],
+    tag#noisy, .tag[data-slug="noisy"], .tag[data-tooltip="PF2E.TraitDescriptionNoisy"],
+    tag#foldaway, .tag[data-slug="foldaway"], .tag[data-tooltip="PF2E.TraitDescriptionFoldaway"],
+    tag#integrated-1d6-b, .tag[data-slug="integrated-1d6-b"], .tag[data-tooltip="PF2E.TraitDescriptionIntegrated"],
+    tag#integrated-1d6-p, .tag[data-slug="integrated-1d6-p"], .tag[data-tooltip="PF2E.TraitDescriptionIntegrated"],
+    tag#integrated-1d6-s, .tag[data-slug="integrated-1d6-s"], .tag[data-tooltip="PF2E.TraitDescriptionIntegrated"],
+    tag#integrated-1d6-s-versatile-p, .tag[data-slug="integrated-1d6-s-versatile-p"], .tag[data-tooltip="PF2E.TraitDescriptionIntegrated"],
+    tag#launching-dart, .tag[data-slug="launching-dart"], .tag[data-tooltip="PF2E.TraitDescriptionLaunching"],
+    tag#shield-throw-20, .tag[data-slug="shield-throw-20"], .tag[data-tooltip="PF2E.TraitDescriptionShieldThrow"],
+    tag#shield-throw-30, .tag[data-slug="shield-throw-30"], .tag[data-tooltip="PF2E.TraitDescriptionShieldThrow"],
+    tag#brace, .tag[data-slug="brace"], .tag[data-tooltip="PF2E.TraitDescriptionBrace"],
+    tag#capacity-2, .tag[data-slug="capacity-2"], .tag[data-tooltip="PF2E.TraitDescriptionCapacity"],
+    tag#capacity-3, .tag[data-slug="capacity-3"], .tag[data-tooltip="PF2E.TraitDescriptionCapacity"],
+    tag#capacity-4, .tag[data-slug="capacity-4"], .tag[data-tooltip="PF2E.TraitDescriptionCapacity"],
+    tag#capacity-5, .tag[data-slug="capacity-5"], .tag[data-tooltip="PF2E.TraitDescriptionCapacity"],
+    tag#climbing, .tag[data-slug="climbing"], .tag[data-tooltip="PF2E.TraitDescriptionClimbing"],
+    tag#concealable, .tag[data-slug="concealable"], .tag[data-tooltip="PF2E.TraitDescriptionConcealable"],
+    tag#concussive, .tag[data-slug="concussive"], .tag[data-tooltip="PF2E.TraitDescriptionConcussive"],
+    tag#disarm, .tag[data-slug="disarm"], .tag[data-tooltip="PF2E.TraitDescriptionDisarm"],
+    tag#grapple, .tag[data-slug="grapple"], .tag[data-tooltip="PF2E.TraitDescriptionGrapple"],
+    tag#hampering, .tag[data-slug="hampering"], .tag[data-tooltip="PF2E.TraitDescriptionHampering"],
+    tag#jousting-d4, .tag[data-slug="jousting-d4"], .tag[data-tooltip="PF2E.TraitDescriptionJousting"],
+    tag#jousting-d6, .tag[data-slug="jousting-d6"], .tag[data-tooltip="PF2E.TraitDescriptionJousting"],
+    tag#jousting-d8, .tag[data-slug="jousting-d8"], .tag[data-tooltip="PF2E.TraitDescriptionJousting"],
+    tag#jousting-d10, .tag[data-slug="jousting-d10"], .tag[data-tooltip="PF2E.TraitDescriptionJousting"],
+    tag#modular, .tag[data-slug="modular"], .tag[data-tooltip="PF2E.TraitDescriptionModular"],
+    tag#nonlethal, .tag[data-slug="nonlethal"], .tag[data-tooltip="PF2E.TraitDescriptionNonlethal"],
+    tag#parry, .tag[data-slug="parry"], .tag[data-tooltip="PF2E.TraitDescriptionParry"],
+    tag#ranged-trip, .tag[data-slug="ranged-trip"], .tag[data-tooltip="PF2E.TraitDescriptionRangedTrip"],
+    tag#razing, .tag[data-slug="razing"], .tag[data-tooltip="PF2E.TraitDescriptionRazing"],
+    tag#recovery, .tag[data-slug="recovery"], .tag[data-tooltip="PF2E.TraitDescriptionRecovery"],
+    tag#resonant, .tag[data-slug="resonant"], .tag[data-tooltip="PF2E.TraitDescriptionResonant"],
+    tag#shove, .tag[data-slug="shove"], .tag[data-tooltip="PF2E.TraitDescriptionShove"],
+    tag#tethered, .tag[data-slug="tethered"], .tag[data-tooltip="PF2E.TraitDescriptionTethered"],
+    tag#trip, .tag[data-slug="trip"], .tag[data-tooltip="PF2E.TraitDescriptionTrip"],
+    tag#versatile-acid, .tag[data-slug="versatile-acid"], .tag[data-tooltip="PF2E.TraitDescriptionVersatile"],
+    tag#versatile-b, .tag[data-slug="versatile-b"], .tag[data-tooltip="PF2E.TraitDescriptionVersatile"],
+    tag#versatile-cold, .tag[data-slug="versatile-cold"], .tag[data-tooltip="PF2E.TraitDescriptionVersatile"],
+    tag#versatile-electricity, .tag[data-slug="versatile-electricity"], .tag[data-tooltip="PF2E.TraitDescriptionVersatile"],
+    tag#versatile-fire, .tag[data-slug="versatile-fire"], .tag[data-tooltip="PF2E.TraitDescriptionVersatile"],
+    tag#versatile-force, .tag[data-slug="versatile-force"], .tag[data-tooltip="PF2E.TraitDescriptionVersatile"],
+    tag#versatile-mental, .tag[data-slug="versatile-mental"], .tag[data-tooltip="undefined"],
+    tag#versatile-p, .tag[data-slug="versatile-p"], .tag[data-tooltip="PF2E.TraitDescriptionVersatile"],
+    tag#versatile-poison, .tag[data-slug="versatile-poison"], .tag[data-tooltip="PF2E.TraitDescriptionVersatile"],
+    tag#versatile-s, .tag[data-slug="versatile-s"], .tag[data-tooltip="PF2E.TraitDescriptionVersatile"],
+    tag#versatile-sonic, .tag[data-slug="versatile-sonic"], .tag[data-tooltip="PF2E.TraitDescriptionVersatile"],
+    tag#versatile-spirit, .tag[data-slug="versatile-spirit"], .tag[data-tooltip="PF2E.TraitDescriptionVersatile"],
+    tag#versatile-vitality, .tag[data-slug="versatile-vitality"], .tag[data-tooltip="PF2E.TraitDescriptionVersatile"],
+    tag#versatile-void, .tag[data-slug="versatile-void"], .tag[data-tooltip="PF2E.TraitDescriptionVersatile"],
+    tag#aura, .tag[data-slug="aura"], .tag[data-tooltip="PF2E.TraitDescriptionAura"],
+    tag#consecration, .tag[data-slug="consecration"], .tag[data-tooltip="PF2E.TraitDescriptionConsecration"],
+    tag#darkness, .tag[data-slug="darkness"], .tag[data-tooltip="PF2E.TraitDescriptionDarkness"],
+    tag#fortune, .tag[data-slug="fortune"], .tag[data-tooltip="PF2E.TraitDescriptionFortune"],
+    tag#light, .tag[data-slug="light"], .tag[data-tooltip="PF2E.TraitDescriptionLight"],
+    tag#misfortune, .tag[data-slug="misfortune"], .tag[data-tooltip="PF2E.TraitDescriptionMisfortune"],
+    tag#morph, .tag[data-slug="morph"], .tag[data-tooltip="PF2E.TraitDescriptionMorph"],
+    tag#polymorph, .tag[data-slug="polymorph"], .tag[data-tooltip="PF2E.TraitDescriptionPolymorph"],
+    tag#radiation, .tag[data-slug="radiation"], .tag[data-tooltip="PF2E.TraitDescriptionRadiation"],
+    tag#secret, .tag[data-slug="secret"], .tag[data-tooltip="PF2E.TraitDescriptionSecret"],
+    tag#auditory, .tag[data-slug="auditory"], .tag[data-tooltip="PF2E.TraitDescriptionAuditory"],
+    tag#olfactory, .tag[data-slug="olfactory"], .tag[data-tooltip="PF2E.TraitDescriptionOlfactory"],
+    tag#visual, .tag[data-slug="visual"], .tag[data-tooltip="PF2E.TraitDescriptionVisual"],
+    tag#amphibious, .tag[data-slug="amphibious"], .tag[data-tooltip="PF2E.TraitDescriptionAmphibious"],
+    tag#aquatic, .tag[data-slug="aquatic"], .tag[data-tooltip="PF2E.TraitDescriptionAquatic"] {
+        background: var(--background-pf2ett-occasional-mechanic);
+        border: var(--border-pf2ett-occasional-mechanic);
+        order: var(--order-pf2ett-occasional-mechanic);
+
+        > div::before {
+            box-shadow: 0 0 0 var(--tag-inset-shadow-size) var(--background-pf2ett-occasional-mechanic) inset;
+        }
+    }
+
+    tag#pf2ett-sample-common-trigger, .tag[data-slug="pf2ett-sample-common-trigger"], .tag[data-tooltip="undefined"],
+    tag#disease, .tag[data-slug="disease"], .tag[data-tooltip="PF2E.TraitDescriptionDisease"],
+    tag#poison, .tag[data-slug="poison"], .tag[data-tooltip="PF2E.TraitDescriptionPoison"],
+    tag#concentrate, .tag[data-slug="concentrate"], .tag[data-tooltip="PF2E.TraitDescriptionConcentrate"],
+    tag#fear, .tag[data-slug="fear"], .tag[data-tooltip="PF2E.TraitDescriptionFear"],
+    tag#magical, .tag[data-slug="magical"], .tag[data-tooltip="PF2E.TraitDescriptionMagical"],
+    tag#manipulate, .tag[data-slug="manipulate"], .tag[data-tooltip="PF2E.TraitDescriptionManipulate"],
+    tag#mental, .tag[data-slug="mental"], .tag[data-tooltip="PF2E.TraitDescriptionMental"],
+    tag#move, .tag[data-slug="move"], .tag[data-tooltip="PF2E.TraitDescriptionMove"],
+    tag#haunt, .tag[data-slug="haunt"], .tag[data-tooltip="PF2E.TraitDescriptionHaunt"] {
+        background: var(--background-pf2ett-common-trigger);
+        border: var(--border-pf2ett-common-trigger);
+        order: var(--order-pf2ett-common-trigger);
+
+        > div::before {
+            box-shadow: 0 0 0 var(--tag-inset-shadow-size) var(--background-pf2ett-common-trigger) inset;
+        }
+    }
+
+    tag#pf2ett-sample-mostly-fluff, .tag[data-slug="pf2ett-sample-mostly-fluff"], .tag[data-tooltip="undefined"],
+    tag#brandish, .tag[data-slug="brandish"], .tag[data-tooltip="undefined"],
+    tag#esoterica, .tag[data-slug="esoterica"], .tag[data-tooltip="PF2E.TraitDescriptionEsoterica"],
+    tag#artifact, .tag[data-slug="artifact"], .tag[data-tooltip="PF2E.TraitDescriptionArtifact"],
+    tag#precious, .tag[data-slug="precious"], .tag[data-tooltip="PF2E.TraitDescriptionPrecious"],
+    tag#processed, .tag[data-slug="processed"], .tag[data-tooltip="PF2E.TraitDescriptionProcessed"],
+    tag#extradimensional, .tag[data-slug="extradimensional"], .tag[data-tooltip="PF2E.TraitDescriptionExtradimensional"],
+    tag#holy, .tag[data-slug="holy"], .tag[data-tooltip="PF2E.TraitDescriptionHoly"],
+    tag#sanctified, .tag[data-slug="sanctified"], .tag[data-tooltip="PF2E.TraitDescriptionSanctified"],
+    tag#tech, .tag[data-slug="tech"], .tag[data-tooltip="PF2E.TraitDescriptionTech"],
+    tag#teleportation, .tag[data-slug="teleportation"], .tag[data-tooltip="PF2E.TraitDescriptionTeleportation"],
+    tag#unholy, .tag[data-slug="unholy"], .tag[data-tooltip="PF2E.TraitDescriptionUnholy"],
+    tag#contact, .tag[data-slug="contact"], .tag[data-tooltip="PF2E.TraitDescriptionContact"],
+    tag#ingested, .tag[data-slug="ingested"], .tag[data-tooltip="PF2E.TraitDescriptionIngested"],
+    tag#inhaled, .tag[data-slug="inhaled"], .tag[data-tooltip="PF2E.TraitDescriptionInhaled"],
+    tag#injury, .tag[data-slug="injury"], .tag[data-tooltip="PF2E.TraitDescriptionInjury"],
+    tag#vitality, .tag[data-slug="vitality"], .tag[data-tooltip="PF2E.TraitDescriptionVitality"],
+    tag#void, .tag[data-slug="void"], .tag[data-tooltip="PF2E.TraitDescriptionVoid"],
+    tag#circus, .tag[data-slug="circus"], .tag[data-tooltip="undefined"],
+    tag#harrow-court, .tag[data-slug="harrow-court"], .tag[data-tooltip="undefined"],
+    tag#civic, .tag[data-slug="civic"], .tag[data-tooltip="undefined"],
+    tag#commerce, .tag[data-slug="commerce"], .tag[data-tooltip="undefined"],
+    tag#leadership, .tag[data-slug="leadership"], .tag[data-tooltip="undefined"],
+    tag#region, .tag[data-slug="region"], .tag[data-tooltip="undefined"],
+    tag#upkeep, .tag[data-slug="upkeep"], .tag[data-tooltip="undefined"],
+    tag#pf2e-ccc-patched, .tag[data-slug="pf2e-ccc-patched"], .tag[data-tooltip="(This was permanently altered by the Pf2e Crowdsourced Community Corrections module.  To revert this alteration you'll need to update or reinstall your pf2e system.)"] {
+        background: var(--background-pf2ett-mostly-fluff);
+        border: var(--border-pf2ett-mostly-fluff);
+        order: var(--order-pf2ett-mostly-fluff);
+
+        > div::before {
+            box-shadow: 0 0 0 var(--tag-inset-shadow-size) var(--background-pf2ett-mostly-fluff) inset;
+        }
+    }
+
+    tag#pf2ett-sample-very-fluff, .tag[data-slug="pf2ett-sample-very-fluff"], .tag[data-tooltip="undefined"],
+    tag#alchemical, .tag[data-slug="alchemical"], .tag[data-tooltip="PF2E.TraitDescriptionAlchemical"],
+    tag#elixir, .tag[data-slug="elixir"], .tag[data-tooltip="PF2E.TraitDescriptionElixir"],
+    tag#gadget, .tag[data-slug="gadget"], .tag[data-tooltip="PF2E.TraitDescriptionGadget"],
+    tag#intelligent, .tag[data-slug="intelligent"], .tag[data-tooltip="PF2E.TraitDescriptionIntelligent"],
+    tag#mechanical, .tag[data-slug="mechanical"], .tag[data-tooltip="PF2E.TraitDescriptionMechanical"],
+    tag#oil, .tag[data-slug="oil"], .tag[data-tooltip="PF2E.TraitDescriptionOil"],
+    tag#potion, .tag[data-slug="potion"], .tag[data-tooltip="PF2E.TraitDescriptionPotion"],
+    tag#steam, .tag[data-slug="steam"], .tag[data-tooltip="PF2E.TraitDescriptionSteam"],
+    tag#detection, .tag[data-slug="detection"], .tag[data-tooltip="PF2E.TraitDescriptionDetection"],
+    tag#emotion, .tag[data-slug="emotion"], .tag[data-tooltip="PF2E.TraitDescriptionEmotion"],
+    tag#healing, .tag[data-slug="healing"], .tag[data-tooltip="PF2E.TraitDescriptionHealing"],
+    tag#prediction, .tag[data-slug="prediction"], .tag[data-tooltip="PF2E.TraitDescriptionPrediction"],
+    tag#revelation, .tag[data-slug="revelation"], .tag[data-tooltip="PF2E.TraitDescriptionRevelation"],
+    tag#scrying, .tag[data-slug="scrying"], .tag[data-tooltip="PF2E.TraitDescriptionScrying"],
+    tag#sleep, .tag[data-slug="sleep"], .tag[data-tooltip="PF2E.TraitDescriptionSleep"],
+    tag#technological, .tag[data-slug="technological"], .tag[data-tooltip="undefined"],
+    tag#illusion, .tag[data-slug="illusion"], .tag[data-tooltip="PF2E.TraitDescriptionIllusion"],
+    tag#air, .tag[data-slug="air"], .tag[data-tooltip="PF2E.TraitDescriptionAir"],
+    tag#earth, .tag[data-slug="earth"], .tag[data-tooltip="PF2E.TraitDescriptionEarth"],
+    tag#fire, .tag[data-slug="fire"], .tag[data-tooltip="PF2E.TraitDescriptionFire"],
+    tag#metal, .tag[data-slug="metal"], .tag[data-tooltip="PF2E.TraitDescriptionMetal"],
+    tag#water, .tag[data-slug="water"], .tag[data-tooltip="PF2E.TraitDescriptionWater"],
+    tag#wood, .tag[data-slug="wood"], .tag[data-tooltip="PF2E.TraitDescriptionWood"],
+    tag#acid, .tag[data-slug="acid"], .tag[data-tooltip="PF2E.TraitDescriptionAcid"],
+    tag#cold, .tag[data-slug="cold"], .tag[data-tooltip="PF2E.TraitDescriptionCold"],
+    tag#electricity, .tag[data-slug="electricity"], .tag[data-tooltip="PF2E.TraitDescriptionElectricity"],
+    tag#force, .tag[data-slug="force"], .tag[data-tooltip="PF2E.TraitDescriptionForce"],
+    tag#sonic, .tag[data-slug="sonic"], .tag[data-tooltip="PF2E.TraitDescriptionSonic"],
+    tag#shadow, .tag[data-slug="shadow"], .tag[data-tooltip="PF2E.TraitDescriptionShadow"],
+    tag#persona-flirt, .tag[data-slug="persona-flirt"], .tag[data-tooltip="PF2E.TraitPersonaFlirtDescription"],
+    tag#persona-guardian, .tag[data-slug="persona-guardian"], .tag[data-tooltip="PF2E.TraitPersonaGuardianDescription"],
+    tag#persona-leader, .tag[data-slug="persona-leader"], .tag[data-tooltip="PF2E.TraitPersonaLeaderDescription"],
+    tag#persona-scholar, .tag[data-slug="persona-scholar"], .tag[data-tooltip="PF2E.TraitPersonaScholarDescription"],
+    tag#persona-scoundrel, .tag[data-slug="persona-scoundrel"], .tag[data-tooltip="PF2E.TraitPersonaScoundrelDescription"],
+    tag#persona-underdog, .tag[data-slug="persona-underdog"], .tag[data-tooltip="PF2E.TraitPersonaUnderdogDescription"],
+    tag#persona-warrior, .tag[data-slug="persona-warrior"], .tag[data-tooltip="PF2E.TraitPersonaWarriorDescription"],
+    tag#persona-wildcard, .tag[data-slug="persona-wildcard"], .tag[data-tooltip="PF2E.TraitPersonaWildcardDescription"],
+    tag#environmental, .tag[data-slug="environmental"], .tag[data-tooltip="PF2E.TraitDescriptionEnvironmental"],
+    tag#army, .tag[data-slug="army"], .tag[data-tooltip="undefined"],
+    tag#cavalry, .tag[data-slug="cavalry"], .tag[data-tooltip="PF2E.Kingmaker.TraitDescription.cavalry"],
+    tag#infantry, .tag[data-slug="infantry"], .tag[data-tooltip="PF2E.Kingmaker.TraitDescription.infantry"],
+    tag#siege, .tag[data-slug="siege"], .tag[data-tooltip="PF2E.Kingmaker.TraitDescription.siege"],
+    tag#skirmisher, .tag[data-slug="skirmisher"], .tag[data-tooltip="PF2E.Kingmaker.TraitDescription.skirmisher"] {
+        background: var(--background-pf2ett-very-fluff);
+        border: var(--border-pf2ett-very-fluff);
+        order: var(--order-pf2ett-very-fluff);
+
+        > div::before {
+            box-shadow: 0 0 0 var(--tag-inset-shadow-size) var(--background-pf2ett-very-fluff) inset;
+        }
+    }
+
+    tag#pf2ett-sample-user-custom, .tag[data-slug="pf2ett-sample-user-custom"], .tag[data-tooltip="undefined"] {
+        background: var(--background-pf2ett-user-custom);
+        border: var(--border-pf2ett-user-custom);
+        order: var(--order-pf2ett-user-custom);
+
+        > div::before {
+            box-shadow: 0 0 0 var(--tag-inset-shadow-size) var(--background-pf2ett-user-custom) inset;
+        }
+    }
+
+    tag#finisher, .tag[data-slug="finisher"],
+    tag#your custom, .tag[data-slug="your custom"] {
+        background: var(--background-pf2ett-user-custom);
+        border: var(--border-pf2ett-user-custom);
+        order: var(--order-pf2ett-user-custom);
+
+        > div::before {
+            box-shadow: 0 0 0 var(--tag-inset-shadow-size) var(--background-pf2ett-user-custom) inset;
+        }
+    }
+}
+
+tags .tag.rarity.common,
+tags .tag.rarity.uncommon,
+tags .tag.rarity.rare,
+tags .tag.rarity.unique {
+    background-color: var(--background-pf2ett-rarity);
+}

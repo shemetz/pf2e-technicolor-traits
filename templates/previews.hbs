@@ -1,0 +1,18 @@
+<div id="pf2ett-super-container">
+    <div id="pf2ett-example-traits">
+        <tags class="tagify paizo-style tags">
+            {{#each sampleTraits}}
+                <tag id="{{dashedName}}" class="tagify__tag tagify--noAnim" data-tooltip="{{tooltipForName}}">
+                    <div><span class="tagify__tag-text">{{fullName}}</span></div>
+                </tag>
+            {{/each}}
+        </tags>
+        <tags class="tagify paizo-style tags">
+            {{#each allTheTraits}}
+                <tag id="{{dashedName}}" class="tagify__tag tagify--noAnim" data-tooltip="{{tooltipForName}}">
+                    <div><span class="tagify__tag-text">{{fullName}}</span></div>
+                </tag>
+            {{/each}}
+        </tags>
+    </div>
+</div>

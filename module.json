@@ -1,0 +1,53 @@
+{
+  "id": "pf2e-technicolor-traits",
+  "title": "PF2e Technicolor Traits",
+  "description": "Allows the GM to see where creatures' stats lie on the Terrible-Low-Moderate-High-Extreme scale.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "esmodules": [
+    "scripts/pf2e-technicolor-traits.js"
+  ],
+  "styles": [
+    "styles/pf2e-technicolor-traits.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    }
+  ],
+  "url": "https://github.com/shemetz/pf2e-technicolor-traits",
+  "manifest": "https://github.com/shemetz/pf2e-technicolor-traits/raw/master/module.json",
+  "download": "https://github.com/shemetz/pf2e-technicolor-traits/archive/master.zip",
+  "readme": "https://github.com/shemetz/pf2e-technicolor-traits/blob/master/Readme.md",
+  "changelog": "https://github.com/shemetz/pf2e-technicolor-traits/blob/master/Changelog.md",
+  "license": "https://github.com/shemetz/pf2e-technicolor-traits/blob/master/License.txt",
+  "bugs": "https://github.com/shemetz/pf2e-technicolor-traits/issues",
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "manifest": "https://github.com/foundryvtt/pf2e/releases/download/latest/system.json",
+        "compatibility": {
+          "minimum": "7.0.0",
+          "verified": "7.2.3"
+        }
+      }
+    ]
+  },
+  "authors": [
+    {
+      "name": "shemetz",
+      "email": "itamarcu+foundry@gmail.com",
+      "discord": "shemetz",
+      "flags": {}
+    }
+  ],
+  "media": []
+}
