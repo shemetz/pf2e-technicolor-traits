@@ -18,16 +18,19 @@ or [directly copy the manifest link for the latest release](https://github.com/s
 <details>
 
 <summary>Mode: Disabled</summary>
+
 ![screenshot](metadata/side-by-side-0.png)
 </details>
 
 <details>
 <summary>Mode: Fully Enabled</summary>
+
 ![screenshot](metadata/side-by-side-1.png)
 </details>
 
 <details>
 <summary>Mode: Only highlight the most important traits</summary>
+
 ![screenshot](metadata/side-by-side-2.png)
 </details>
 
