@@ -60,6 +60,26 @@ export const refreshStyleElement = () => {
         }`
     newCss += `}`
   }
+  if (mode !== 'disabled') {
+    newCss += css`
+        tag, .tag {
+            /* should only be relevant if in "only-important" mode*/
+            order: 5;
+        }
+
+        .tag.rarity {
+            order: 2;
+        }
+
+        .tagify__input {
+            order: 999;
+        }
+
+        hr.vr {
+            order: 999;
+        }
+    `
+  }
 
   if (mode === 'fully-enabled') {
     newCss += css`

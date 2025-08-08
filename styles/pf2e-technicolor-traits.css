@@ -86,20 +86,6 @@ header.sheet-header {
     }
 }
 
-.tag.rarity {
-    order: 2;
-}
-.tag {
-    /* should only be relevant if in "only-important" mode*/
-    order: 5;
-}
-.tagify__input {
-    order: 999;
-}
-hr.vr {
-    order: 999;
-}
-
 .IGNORE {
     /* Old/existing system colors, for reference. */
     --color-bg-trait: #5e0000;

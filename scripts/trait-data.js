@@ -48,7 +48,7 @@ export const TRAIT_CATEGORY = Object.freeze({
   /**
    * Important but constantly appears in chat cards (on weapon attacks usually) so it should only be visibly
    * highlight-colored in sheet headers, not in chat cards, probably not inside sheets
-   * e.g. Attack, Thrown, Subtle, Brutal, Reach, Finesse
+   * e.g. Attack, Thrown, Brutal, Reach, Finesse
    * (has rules, relevant in header)
    */
   IMPORTANT_MECHANIC_OUTSIDE_CHAT: 'important-mechanic-outside-chat',
@@ -70,7 +70,7 @@ export const TRAIT_CATEGORY = Object.freeze({
 
   /**
    * This trait has rules but they are basically never important, it's probably fine if you forget about them
-   * e.g. Esoterica, Light, Clockwork
+   * e.g. Esoterica, Light, Processed
    * (has rules)
    */
   MOSTLY_FLUFF: 'mostly-fluff',
@@ -101,8 +101,8 @@ export const TC_TOOLTIPS = Object.freeze({
   [TC.IMPORTANT_MECHANIC_OUTSIDE_CHAT]: 'Attack, and some major weapon traits, to be highlight in sheet headers only. e.g. Thrown, Subtle, Brutal, Reach, Finesse. (has rules, relevant in header)',
   [TC.OCCASIONAL_MECHANIC]: 'Has rules that are only occasionally meaningful, you should glance at it if you\'re unfamiliar. e.g. Visual, Auditory, Processed, Nonlethal, Jousting, Brace. (has rules)',
   [TC.COMMON_TRIGGER]: 'Has no special rules of its own, but other traits or abilities often reference it so you should not miss its existence. e.g. Concentrate, Manipulate, Mental, Move. (no rules)',
-  [TC.MOSTLY_FLUFF]: 'Has rules but they are basically never important, it\'s probably fine if you forget about them. e.g. Esoterica, Light, Clockwork. (has rules)',
-  [TC.VERY_FLUFF]: 'Has no rules, is used for flavor, may be referenced by other things (e.g. weaknesses) but not commonly. e.g. Fire, Water, Poison, Disease, Prediction, Detection, Healing, Gadget. (no rules)',
+  [TC.MOSTLY_FLUFF]: 'Has rules but they are basically never important, it\'s probably fine if you forget about them. e.g. Esoterica, Light, Processed. (has rules)',
+  [TC.VERY_FLUFF]: 'Has no rules, is used for flavor, may be referenced by other things (e.g. weaknesses) but not commonly. e.g. Fire, Water, Prediction, Detection, Healing, Gadget. (no rules)',
   [TC.USER_CUSTOM]: 'For user customization. You can set which traits are extra-highlighted via the module settings.',
 })
 
@@ -441,7 +441,7 @@ export const CATEGORY_PER_TRAIT = {
   sleep: TC.VERY_FLUFF,
   spellshape: TC.SUBTYPE_MECHANIC,
   splash: TC.IMPORTANT_MECHANIC_OUTSIDE_CHAT,
-  subtle: TC.IMPORTANT_MECHANIC_OUTSIDE_CHAT,
+  subtle: TC.IMPORTANT_MECHANIC, // yes haha subtle is not subtle
   summon: TC.SUBTYPE_MECHANIC,
   summoned: TC.IMPORTANT_MECHANIC,
   tea: TC.SUBTYPE_MECHANIC,
