@@ -458,6 +458,7 @@ export const CATEGORY_PER_TRAIT = {
   sonic: TC.VERY_FLUFF,
   vitality: TC.MOSTLY_FLUFF,
   void: TC.MOSTLY_FLUFF,
+  spirit: TC.MOSTLY_FLUFF, // spirit only affects creatures with souls.  note that this overlaps with spirit creatures :(
   shadow: TC.VERY_FLUFF,
 
   // Ancestry Traits
@@ -575,7 +576,7 @@ export const CATEGORY_PER_TRAIT = {
   plant: TC.ORIGIN,
   "sea-devil": TC.ORIGIN,
   shade: TC.ORIGIN,
-  spirit: TC.ORIGIN,
+  //spirit: TC.ORIGIN, // ugh, it's also a damage type
   time: TC.ORIGIN,
   undead: TC.IMPORTANT_MECHANIC,
 
