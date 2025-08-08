@@ -1,8 +1,8 @@
 {
   "id": "pf2e-technicolor-traits",
-  "title": "PF2e Technicolor Traits",
+  "title": "PF2E Technicolor Traits",
   "description": "Allows the GM to see where creatures' stats lie on the Terrible-Low-Moderate-High-Extreme scale.",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "compatibility": {
     "minimum": "13",
     "verified": "13"
@@ -36,7 +36,7 @@
         "manifest": "https://github.com/foundryvtt/pf2e/releases/download/latest/system.json",
         "compatibility": {
           "minimum": "7.0.0",
-          "verified": "7.2.3"
+          "verified": "7.3.1"
         }
       }
     ]
@@ -49,5 +49,13 @@
       "flags": {}
     }
   ],
-  "media": []
+  "media": [
+    {
+      "type": "cover",
+      "url": "https://raw.githubusercontent.com/shemetz/pf2e-technicolor-traits/master/metadata/side-by-side-1.png",
+      "caption": "PF2E Technicolor Traits",
+      "loop": false,
+      "flags": {}
+    }
+  ]
 }
