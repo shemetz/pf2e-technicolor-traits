@@ -89,16 +89,15 @@ header.sheet-header {
 .tag.rarity {
     order: 2;
 }
+.tag {
+    /* should only be relevant if in "only-important" mode*/
+    order: 5;
+}
 .tagify__input {
     order: 999;
 }
 hr.vr {
     order: 999;
-}
-
-/** @override pf2e style, I don't like how hard it is to read traits on item sheets that aren't on actors */
-.tagify[disabled] {
-    opacity: 1 !important;
 }
 
 .IGNORE {

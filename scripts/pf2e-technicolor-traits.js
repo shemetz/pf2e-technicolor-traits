@@ -23,21 +23,17 @@ const initializeStyleElement = () => {
  *     <span class="tag" data-trait="" data-tooltip="PF2E.TraitDescriptionFire">Fire</span>
  */
 export const refreshStyleElement = () => {
-  const toggledOn = game.settings.get(MODULE_ID, 'mode') !== "disabled"
-  if (!toggledOn) {
-    styleElement.innerHTML = ''
-    return
-  }
+  const mode = game.settings.get(MODULE_ID, 'mode')
+  let newCss = ''
   const customColoredTraits = game.settings.get(MODULE_ID, 'custom-colored-traits')
 
-  let newCss = ''
-  {
+  if (mode !== 'disabled') {
     newCss += css`*:not(.subsection.languages) > .tags {`
     for (const category of Object.values(TRAIT_CATEGORY)) {
-      const traitSelectors = Object.entries(CATEGORY_PER_TRAIT).
-        filter(([, cat]) => cat === category).
-        map(([trait]) => trait).
-        map((trait) => `tag#${trait}, .tag[data-slug="${trait}"], .tag[data-tooltip="${descriptionKeyOfTrait(trait)}"]`).
+      if (mode === 'only-important' && category !== TRAIT_CATEGORY.IMPORTANT_MECHANIC) {
+        continue
+      }
+      const traitSelectors = Object.entries(CATEGORY_PER_TRAIT).filter(([, cat]) => cat === category).map(([trait]) => trait).map((trait) => `tag#${trait}, .tag[data-slug="${trait}"], .tag[data-tooltip="${descriptionKeyOfTrait(trait)}"]`).
         //map((trait) => descriptionKeyOfTrait(trait) && `.tag[data-tooltip="${descriptionKeyOfTrait(trait)}"]`).
         filter((str) => str !== undefined)
       newCss = newCss + css`
@@ -51,8 +47,7 @@ export const refreshStyleElement = () => {
               }
           }`
     }
-    const customTraitSelectors = (customColoredTraits + ',your custom').split(',').map(trait => trait.trim()).
-      map((trait) => `tag#${trait}, .tag[data-slug="${trait}"]`).filter(trait => trait.length > 0)
+    const customTraitSelectors = (customColoredTraits + ',your custom').split(',').map(trait => trait.trim()).map((trait) => `tag#${trait}, .tag[data-slug="${trait}"]`).filter(trait => trait.length > 0)
     newCss = newCss + css`
         ${customTraitSelectors.join(',\n')} {
             background: var(--background-pf2ett-user-custom);
@@ -66,27 +61,29 @@ export const refreshStyleElement = () => {
     newCss += `}`
   }
 
-  newCss += css`
-      tags .tag.rarity.common,
-      tags .tag.rarity.uncommon,
-      tags .tag.rarity.rare,
-      tags .tag.rarity.unique {
-          background-color: var(--background-pf2ett-rarity);
-      }
-  `
+  if (mode === 'fully-enabled') {
+    newCss += css`
+        tags .tag.rarity.common,
+        tags .tag.rarity.uncommon,
+        tags .tag.rarity.rare,
+        tags .tag.rarity.unique {
+            background-color: var(--background-pf2ett-rarity);
+        }
+    `
+  }
+
+  if (game.settings.get(MODULE_ID, 'disable-translucent-disabled-tags') === true) {
+    newCss += css`
+        .tagify[disabled] {
+            opacity: 1 !important;
+        }
+    `
+  }
 
   styleElement.innerHTML = newCss
 }
 
 const registerSettings = () => {
-  game.settings.register(MODULE_ID, 'mode', {
-    name: `color-coding mode`,
-    scope: 'client',
-    config: false,
-    type: String,
-    default: true,
-    onChange: refreshStyleElement,
-  })
   game.settings.registerMenu(MODULE_ID, 'previews', {
     name: `Configure color-coded traits`,
     label: `Preview all traits`,
@@ -95,6 +92,20 @@ const registerSettings = () => {
     type: TechnicolorTraitsPreviews,
     restricted: false,
   })
+  game.settings.register(MODULE_ID, 'mode', {
+    name: `Color-coding mode`,
+    hint: `When fully enabled, traits will be color-coded based on a dozen different categories.`,
+    scope: 'client',
+    config: true,
+    type: String,
+    choices: {
+      'disabled': `Disabled (traits will not be color-coded)`,
+      'fully-enabled': `Fully enabled`,
+      'only-important': `Only highlight important traits (e.g. Incapacitate, Overflow, Virulent)`,
+    },
+    default: 'fully-enabled',
+    onChange: refreshStyleElement,
+  })
   game.settings.register(MODULE_ID, 'custom-colored-traits', {
     name: `Custom list of traits to uniquely colorize`,
     hint: `Separated by commas.  They will be rainbow-colored, to be distinct.`,
@@ -102,6 +113,14 @@ const registerSettings = () => {
     config: true,
     type: String,
     default: '',
+  })
+  game.settings.register(MODULE_ID, 'disable-translucent-disabled-tags', {
+    name: `Increase visibility of tags in compendium item sheet headers`,
+    hint: `Normally the PF2E system makes all traits translucent when you cannot edit them;  this setting overrides that behavior.`,
+    scope: 'client',
+    config: true,
+    type: Boolean,
+    default: true,
   })
 }
 
