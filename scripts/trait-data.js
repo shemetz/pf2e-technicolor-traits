@@ -90,38 +90,6 @@ export const TRAIT_CATEGORY = Object.freeze({
 
 const TC = TRAIT_CATEGORY
 
-export const TC_TOOLTIPS = Object.freeze({
-  [TC.RARITY]: 'e.g. Common, Rare, Unique. (no rules, relevant in header)',
-  [TC.ORIGIN]: 'e.g. General, Skill, Wizard, Demolitionist, Fiend. (no rules, relevant in header)',
-  [TC.SUB_ORIGIN]: 'e.g. Arcane, Divine, Occult, Primal, Demon, Devil. (no rules, relevant in header)',
-  [TC.BUILD_LIMITATION]: 'e.g. Composite, Oath, Apparition, Ikon, Modification, Dedication, Multiclass, Deviant. (has rules, relevant in header)',
-  [TC.TYPE_MECHANIC]: 'e.g. Impulse, Cantrip, Focus, Downtime, Consumable. (has rules)',
-  [TC.SUBTYPE_MECHANIC]: 'e.g. Spellshape, Composition, Hex, Contingency, Tattoo, Fulu, Trap, Snare, Spellgun, Bomb, Contract, Missive. (has rules)',
-  [TC.IMPORTANT_MECHANIC]: 'Something mechanical you always want to know about, the most critical traits to pay attention to. e.g. Incapacitation, Unstable, Flourish, Press, Curse, Overflow, Apex, Undead, Incorporeal. (has rules)',
-  [TC.IMPORTANT_MECHANIC_OUTSIDE_CHAT]: 'Attack, and some major weapon traits, to be highlight in sheet headers only. e.g. Thrown, Subtle, Brutal, Reach, Finesse. (has rules, relevant in header)',
-  [TC.OCCASIONAL_MECHANIC]: 'Has rules that are only occasionally meaningful, you should glance at it if you\'re unfamiliar. e.g. Visual, Auditory, Processed, Nonlethal, Jousting, Brace. (has rules)',
-  [TC.COMMON_TRIGGER]: 'Has no special rules of its own, but other traits or abilities often reference it so you should not miss its existence. e.g. Concentrate, Manipulate, Mental, Move. (no rules)',
-  [TC.MOSTLY_FLUFF]: 'Has rules but they are basically never important, it\'s probably fine if you forget about them. e.g. Esoterica, Light, Processed. (has rules)',
-  [TC.VERY_FLUFF]: 'Has no rules, is used for flavor, may be referenced by other things (e.g. weaknesses) but not commonly. e.g. Fire, Water, Prediction, Detection, Healing, Gadget. (no rules)',
-  [TC.USER_CUSTOM]: 'For user customization. You can set which traits are extra-highlighted via the module settings.',
-})
-
-export const TC_NAMES = Object.freeze({
-  [TC.RARITY]: 'Rarity',
-  [TC.ORIGIN]: 'Origin',
-  [TC.SUB_ORIGIN]: 'Sub-origin',
-  [TC.BUILD_LIMITATION]: 'Build limitation',
-  [TC.TYPE_MECHANIC]: 'Type',
-  [TC.SUBTYPE_MECHANIC]: 'Subtype',
-  [TC.IMPORTANT_MECHANIC]: 'Important mechanic',
-  [TC.IMPORTANT_MECHANIC_OUTSIDE_CHAT]: 'Important mechanic to highlight but only in sheet headers',
-  [TC.OCCASIONAL_MECHANIC]: 'Occasional mechanic',
-  [TC.COMMON_TRIGGER]: 'Trigger',
-  [TC.MOSTLY_FLUFF]: 'Mostly fluff',
-  [TC.VERY_FLUFF]: 'Very fluff',
-  [TC.USER_CUSTOM]: 'User custom',
-})
-
 /**
  * approximately sorted by how diverse each group of traits is;  this way the visual preview starts off with lots of different stuff even beyond the samples
  */

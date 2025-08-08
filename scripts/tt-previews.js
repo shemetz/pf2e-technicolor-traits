@@ -1,5 +1,5 @@
 import { descriptionKeyOfTrait, nameKeyOfTrait } from './utils.js'
-import { CATEGORY_PER_TRAIT, TC_NAMES, TC_TOOLTIPS, TRAIT_CATEGORY } from './trait-data.js'
+import { CATEGORY_PER_TRAIT, TRAIT_CATEGORY } from './trait-data.js'
 
 const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api
 
@@ -66,19 +66,18 @@ export class TechnicolorTraitsPreviews extends HandlebarsApplicationMixin(Applic
     context.sampleTraits = Object.values(TRAIT_CATEGORY)
       .map((trait) => ({
         dashedName: `pf2ett-sample-${trait}`,
-        fullName: TC_NAMES[trait],
-        tooltipForName: TC_TOOLTIPS[trait],
+        nameKey: `pf2e-technicolor-traits.TraitCategory.${trait}.Name`,
+        tooltipKey: `pf2e-technicolor-traits.TraitCategory.${trait}.Tooltip`,
       }))
-      .filter(tr => tr.fullName !== undefined && tr.fullName.length > 0)
     context.allTheTraits = Object.keys(CATEGORY_PER_TRAIT)
       .filter(trait => !trait.startsWith('pf2ett-sample-'))
       .map((trait) => ({
         dashedName: trait,
-        fullName: game.i18n.localize(nameKeyOfTrait(trait)),
-        tooltipForName: descriptionKeyOfTrait(trait),
+        nameKey: nameKeyOfTrait(trait),
+        tooltipKey: descriptionKeyOfTrait(trait),
       }))
       // filter out traits that no longer exist, e.g. Good, Gnoll
-      .filter(tr => tr.fullName !== undefined && tr.fullName.length > 0)
+      .filter(tr => tr.nameKey !== undefined && tr.nameKey.length > 0)
     context.mode = game.settings.get('pf2e-technicolor-traits', 'mode')
     return context
   }
@@ -89,6 +88,6 @@ export class TechnicolorTraitsPreviews extends HandlebarsApplicationMixin(Applic
    * @param {object} options - Render options.
    */
   _onRender (context, options) {
-
+  //I tried to add a dropdown selector for the mode in here, but immediately gave up
   }
 }

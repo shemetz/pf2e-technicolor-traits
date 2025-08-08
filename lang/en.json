@@ -1,13 +1,84 @@
 {
   "pf2e-technicolor-traits": {
+    "Settings": {
+      "Previews": {
+        "Name": "Preview Technicolor Traits, see them all at once",
+        "Label": "Preview all traits"
+      },
+      "Mode": {
+        "Name": "Color-coding mode",
+        "Hint": "When fully enabled, traits will be color-coded based on a dozen different categories.  Red means important, big border means it has rules."
+      },
+      "CustomColoredTraits": {
+        "Name": "Custom list of traits to uniquely colorize",
+        "Hint": "Separated by commas.  They will be rainbow-colored, to be distinct."
+      },
+      "DisableTranslucentDisabledTags": {
+        "Name": "Increase visibility of tags in compendium item sheet headers",
+        "Hint": "Normally the PF2E system makes all traits translucent when you cannot edit them;  this setting overrides that behavior."
+      }
+    },
     "Previews": {
-      "Title": "Preview Technicolor Traits",
-      "AllTraits": "Here's what all the traits will look like",
-      "ModeDropdownLabel": "Select mode"
+      "Title": "Preview Technicolor Traits"
     },
     "Mode": {
-      "Disabled": "Disabled",
-      "ColorScheme1": "1 - full opinionated colors"
+      "disabled": "Disabled (traits will not be color-coded)",
+      "fully-enabled": "Fully enabled",
+      "only-important": "Only highlight important traits (e.g. Incapacitate, Overflow, Virulent)"
+    },
+    "TraitCategory": {
+      "rarity": {
+        "Name": "Rarity",
+        "Tooltip": "e.g. Common, Rare, Unique. (no rules, relevant in header)"
+      },
+      "origin": {
+        "Name": "Origin",
+        "Tooltip": "e.g. General, Skill, Wizard, Demolitionist, Fiend. (no rules, relevant in header)"
+      },
+      "sub-origin": {
+        "Name": "Sub-Origin",
+        "Tooltip": "e.g. Arcane, Divine, Occult, Primal, Demon, Devil. (no rules, relevant in header)"
+      },
+      "build-limitation": {
+        "Name": "Build Limitation",
+        "Tooltip": "e.g. Composite, Oath, Apparition, Ikon, Modification, Dedication, Multiclass, Deviant. (has rules, relevant in header)"
+      },
+      "type-mechanic": {
+        "Name": "Type Mechanic",
+        "Tooltip": "e.g. Impulse, Cantrip, Focus, Downtime, Consumable. (has rules)"
+      },
+      "subtype-mechanic": {
+        "Name": "Subtype Mechanic",
+        "Tooltip": "e.g. Spellshape, Composition, Hex, Contingency, Tattoo, Fulu, Trap, Snare, Spellgun, Bomb, Contract, Missive. (has rules)"
+      },
+      "important-mechanic": {
+        "Name": "Important Mechanic",
+        "Tooltip": "Something mechanical you always want to know about, the most critical traits to pay attention to. e.g. Incapacitation, Unstable, Flourish, Press, Curse, Overflow, Apex, Undead, Incorporeal. (has rules)"
+      },
+      "important-mechanic-outside-chat": {
+        "Name": "Important Mechanic Outside Chat",
+        "Tooltip": "Attack, and some major weapon traits, to be highlight in sheet headers only. e.g. Thrown, Subtle, Brutal, Reach, Finesse. (has rules, relevant in header)"
+      },
+      "occasional-mechanic": {
+        "Name": "Occasional Mechanic",
+        "Tooltip": "Has rules that are only occasionally meaningful, you should glance at it if you're unfamiliar. e.g. Visual, Auditory, Processed, Nonlethal, Jousting, Brace. (has rules)"
+      },
+      "common-trigger": {
+        "Name": "Common Trigger",
+        "Tooltip": "Has no special rules of its own, but other traits or abilities often reference it so you should not miss its existence. e.g. Concentrate, Manipulate, Mental, Move. (no rules)"
+      },
+      "mostly-fluff": {
+        "Name": "Mostly Fluff",
+        "Tooltip": "Has rules but they are basically never important, it's probably fine if you forget about them. e.g. Esoterica, Light, Processed. (has rules)"
+      },
+      "very-fluff": {
+        "Name": "Very Fluff",
+        "Tooltip": "Has no rules, is used for flavor, may be referenced by other things (e.g. weaknesses) but not commonly. e.g. Fire, Water, Prediction, Detection, Healing, Gadget. (no rules)"
+      },
+      "user-custom": {
+        "Name": "User Custom",
+        "Tooltip": "For user customization. You can set which traits are extra-highlighted via the module settings."
+      }
     }
   }
 }

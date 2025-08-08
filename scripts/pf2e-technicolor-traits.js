@@ -105,38 +105,38 @@ export const refreshStyleElement = () => {
 
 const registerSettings = () => {
   game.settings.registerMenu(MODULE_ID, 'previews', {
-    name: `Configure color-coded traits`,
-    label: `Preview all traits`,
+    name: 'pf2e-technicolor-traits.Settings.Previews.Name',
+    label: 'pf2e-technicolor-traits.Settings.Previews.Label',
     scope: 'client',
     icon: 'fas fa-wrench',
     type: TechnicolorTraitsPreviews,
     restricted: false,
   })
   game.settings.register(MODULE_ID, 'mode', {
-    name: `Color-coding mode`,
-    hint: `When fully enabled, traits will be color-coded based on a dozen different categories.`,
+    name: 'pf2e-technicolor-traits.Settings.Mode.Name',
+    hint: 'pf2e-technicolor-traits.Settings.Mode.Hint',
     scope: 'client',
     config: true,
     type: String,
     choices: {
-      'disabled': `Disabled (traits will not be color-coded)`,
-      'fully-enabled': `Fully enabled`,
-      'only-important': `Only highlight important traits (e.g. Incapacitate, Overflow, Virulent)`,
+      'disabled': 'pf2e-technicolor-traits.Mode.disabled',
+      'fully-enabled': 'pf2e-technicolor-traits.Mode.fully-enabled',
+      'only-important': 'pf2e-technicolor-traits.Mode.only-important',
     },
     default: 'fully-enabled',
     onChange: refreshStyleElement,
   })
   game.settings.register(MODULE_ID, 'custom-colored-traits', {
-    name: `Custom list of traits to uniquely colorize`,
-    hint: `Separated by commas.  They will be rainbow-colored, to be distinct.`,
+    name: 'pf2e-technicolor-traits.Settings.CustomColoredTraits.Name',
+    hint: 'pf2e-technicolor-traits.Settings.CustomColoredTraits.Hint',
     scope: 'client',
     config: true,
     type: String,
     default: '',
   })
   game.settings.register(MODULE_ID, 'disable-translucent-disabled-tags', {
-    name: `Increase visibility of tags in compendium item sheet headers`,
-    hint: `Normally the PF2E system makes all traits translucent when you cannot edit them;  this setting overrides that behavior.`,
+    name: 'pf2e-technicolor-traits.Settings.DisableTranslucentDisabledTags.Name',
+    hint: 'pf2e-technicolor-traits.Settings.DisableTranslucentDisabledTags.Hint',
     scope: 'client',
     config: true,
     type: Boolean,
