@@ -28,7 +28,7 @@ export const refreshStyleElement = () => {
   const customColoredTraits = game.settings.get(MODULE_ID, 'custom-colored-traits')
 
   if (mode !== 'disabled') {
-    newCss += css`*:not(.subsection.languages) > .tags {`
+    newCss += css`*:not(.subsection.languages) > .tags:not(.modifiers) {`
     for (const category of Object.values(TRAIT_CATEGORY)) {
       if (mode === 'only-important' && category !== TRAIT_CATEGORY.IMPORTANT_MECHANIC) {
         continue
