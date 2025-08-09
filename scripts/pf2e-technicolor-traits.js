@@ -24,13 +24,61 @@ const initializeStyleElement = () => {
  */
 export const refreshStyleElement = () => {
   const mode = game.settings.get(MODULE_ID, 'mode')
-  let newCss = ''
+  const recolorRarity = game.settings.get(MODULE_ID, 'recolor-rarity')
+  const disableTranslucentDisabledTags = game.settings.get(MODULE_ID, 'disable-translucent-disabled-tags')
   const customColoredTraits = game.settings.get(MODULE_ID, 'custom-colored-traits')
+  let newCss = ''
 
+  if (mode !== 'disabled') {
+    newCss += css`
+        tags, .tags {
+            tag, .tag {
+                /* should only be relevant if in "only-important" mode*/
+                order: 5;
+            }
+
+            .tag.rarity {
+                order: 2;
+            }
+
+            .tagify__input {
+                order: 999;
+            }
+
+            hr.vr {
+                order: 999;
+            }
+        }
+    `
+  }
+
+  if (mode === 'fully-enabled' && recolorRarity) {
+    newCss += css`
+        tags:not(.package-overview), .tags:not(.package-overview) {
+            .tag.rarity.common,
+            .tag.rarity.uncommon,
+            .tag.rarity.rare,
+            .tag.rarity.unique {
+                background-color: var(--background-pf2ett-rarity);
+            }
+        }
+    `
+  }
+
+  if (disableTranslucentDisabledTags) {
+    newCss += css`
+        .tagify[disabled] {
+            opacity: 1 !important;
+        }
+    `
+  }
   if (mode !== 'disabled') {
     newCss += css`*:not(.subsection.languages) > .tags:not(.modifiers) {`
     for (const category of Object.values(TRAIT_CATEGORY)) {
       if (mode === 'only-important' && category !== TRAIT_CATEGORY.IMPORTANT_MECHANIC) {
+        continue
+      }
+      if (!recolorRarity && category === TRAIT_CATEGORY.RARITY) {
         continue
       }
       const traitSelectors = Object.entries(CATEGORY_PER_TRAIT).filter(([, cat]) => cat === category).map(([trait]) => trait).map((trait) => `tag#${trait}, .tag[data-slug="${trait}"], .tag[data-tooltip="${descriptionKeyOfTrait(trait)}"]`).
@@ -59,45 +107,6 @@ export const refreshStyleElement = () => {
             }
         }`
     newCss += `}`
-  }
-  if (mode !== 'disabled') {
-    newCss += css`
-        tag, .tag {
-            /* should only be relevant if in "only-important" mode*/
-            order: 5;
-        }
-
-        .tag.rarity {
-            order: 2;
-        }
-
-        .tagify__input {
-            order: 999;
-        }
-
-        hr.vr {
-            order: 999;
-        }
-    `
-  }
-
-  if (mode === 'fully-enabled') {
-    newCss += css`
-        tags .tag.rarity.common,
-        tags .tag.rarity.uncommon,
-        tags .tag.rarity.rare,
-        tags .tag.rarity.unique {
-            background-color: var(--background-pf2ett-rarity);
-        }
-    `
-  }
-
-  if (game.settings.get(MODULE_ID, 'disable-translucent-disabled-tags') === true) {
-    newCss += css`
-        .tagify[disabled] {
-            opacity: 1 !important;
-        }
-    `
   }
 
   styleElement.innerHTML = newCss
@@ -133,6 +142,16 @@ const registerSettings = () => {
     config: true,
     type: String,
     default: '',
+    onChange: refreshStyleElement,
+  })
+  game.settings.register(MODULE_ID, 'recolor-rarity', {
+    name: 'pf2e-technicolor-traits.Settings.RecolorRarity.Name',
+    hint: 'pf2e-technicolor-traits.Settings.RecolorRarity.Hint',
+    scope: 'client',
+    config: true,
+    type: Boolean,
+    default: true,
+    onChange: refreshStyleElement,
   })
   game.settings.register(MODULE_ID, 'disable-translucent-disabled-tags', {
     name: 'pf2e-technicolor-traits.Settings.DisableTranslucentDisabledTags.Name',

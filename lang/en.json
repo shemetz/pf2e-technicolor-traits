@@ -9,6 +9,10 @@
         "Name": "Color-coding mode",
         "Hint": "When fully enabled, traits will be color-coded based on a dozen different categories.  Red means important, big border means it has rules."
       },
+      "RecolorRarity": {
+        "Name": "Recolor rarity traits",
+        "Hint": "(if Fully Enabled) Override the default pf2e rarity colors with a consistent blue, or green outside headers.  This reduces unnecessary visual noise, since rarity doesn't usually matter beyond initial access."
+      },
       "CustomColoredTraits": {
         "Name": "Custom list of traits to uniquely colorize",
         "Hint": "Separated by commas.  They will be rainbow-colored, to be distinct."
