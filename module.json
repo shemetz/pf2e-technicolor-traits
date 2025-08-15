@@ -19,6 +19,12 @@
       "name": "English",
       "path": "lang/en.json",
       "flags": {}
+    },
+    {
+      "lang": "pl",
+      "name": "Polski",
+      "path": "lang/pl.json",
+      "flags": {}
     }
   ],
   "url": "https://github.com/shemetz/pf2e-technicolor-traits",
