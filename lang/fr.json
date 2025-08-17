@@ -1,2 +1,88 @@
 {
+  "pf2e-technicolor-traits": {
+    "Settings": {
+      "Previews": {
+        "Name": "Aperçu des traits de Technicolor pour les voir tous en une fois",
+        "Label": "Aperçu de tous les traits"
+      },
+      "Mode": {
+        "Name": "Mode de codage couleur",
+        "Hint": "Une fois entièrement activé, les traits seront codés par couleur selon une douzaine de catégories différentes. Rouge signifie important. Une bordure épaisse signifie qu'il obéit à des règles."
+      },
+      "RecolorRarity": {
+        "Name": "Recolorer les traits de rareté",
+        "Hint": "(si activé) Remplace les couleurs de rareté par défaut de pf2e par un bleu ou un vert uniforme à l'extérieur des en-têtes. Cela réduit le bruit visuel inutile, car la rareté ne présente pas vraiment d'importance au-delà de l'accès initial."
+      },
+      "CustomColoredTraits": {
+        "Name": "Liste personnalisée de traits pour uniquement les colorer",
+        "Hint": "Séparés par des virgules, ils seront de couleur arc-en-ciel pour être distincts."
+      },
+      "DisableTranslucentDisabledTags": {
+        "Name": "Augmenter la visibilité des balises dans les en-têtes des feuilles d'objet du compendium",
+        "Hint": "Normalement, le système PF2e rend tous les traits translucides lorsque vous ne pouvez pas les modifier. Ce paramètre change ce comportement."
+      }
+    },
+    "Previews": {
+      "Title": "Aperçu des traits de Technicolor"
+    },
+    "Mode": {
+      "disabled": "Désactivé (les traits ne seront pas codés par couleur)",
+      "fully-enabled": "Entièrement activé",
+      "only-important": "Mettre uniquement en évidence les traits importants (ex. débordement, mise hors de combat, virulent)"
+    },
+    "TraitCategory": {
+      "rarity": {
+        "Name": "Rareté",
+        "Tooltip": "Ex. courant, rare, unique. (pas de règles, pertinent dans l'en-tête)"
+      },
+      "origin": {
+        "Name": "Origine",
+        "Tooltip": "Ex. Compétence, Général, Magicien, Démolisseur, Fiélon. (Pas de règles, pertinent dans l'en-tête)"
+      },
+      "sub-origin": {
+        "Name": "Sous-origine",
+        "Tooltip": "Ex. Arcanique, Divin, Occulte, Primordial, Démon, Diable. (Pas de règles, pertinent dans l'en-tête)"
+      },
+      "build-limitation": {
+        "Name": "Limitation dans la construction",
+        "Tooltip": "Ex. Composite, Serment, Apparition, Ikône, Modification, Dévouement, Multiclasse, Déviant. (obéit à des règles, pertinent dans l'en-tête)"
+      },
+      "type-mechanic": {
+        "Name": "Type de mécanique",
+        "Tooltip": "Ex. Impulsion, Tour de magie, Focalisé, Intermède, Consommable. (obéit à des règles)"
+      },
+      "subtype-mechanic": {
+        "Name": "Sous-type de mécanique",
+        "Tooltip": "Ex. Mutamagie, Composition, Maléfice, Contingence, Tatouage, Fulu, Piège, Piège artisanal, Lancesort, Bombe, Contrat, Missive. (obéit à des règles)"
+      },
+      "important-mechanic": {
+        "Name": "Mécanique importante",
+        "Tooltip": "Aspect mécanique dont vous devez toujours vous soucier, les traits les plus critiques auxquels il faut prêter attention. Ex. Mise hors de combat, Instable, Sophistication, Persévérer, Malédiction, Débordement, Apogée, Mort-vivant, Intangible. (obéit à des règles)"
+      },
+      "important-mechanic-outside-chat": {
+        "Name": "Mécanique importante en dehors de la conversation",
+        "Tooltip": "Attaque et quelques traits d'armes majeurs, à mettre en évidence uniquement dans l'en-tête de feuille. Ex. Jet, Subtil, Brutal, Allonge, Finesse. (obéit à des règles, pertinent dans l'en-tête)"
+      },
+      "occasional-mechanic": {
+        "Name": "Mécanique occasionnelle",
+        "Tooltip": "Obéit à des règles qui ne sont que rarement significatives, vous devriez y jeter un coup d'œil si il ne vous est pas familier. Ex. Visuel, Audible, Élaboré, Non létal, Joute, Préparation. (Obéit à des règles)"
+      },
+      "common-trigger": {
+        "Name": "Déclencheur courant",
+        "Tooltip": "N'obéit pas à une règle spéciale en lui-même, mais d'autres traits ou capacités s'y référent souvent. Vous devrez donc connaître son existence. Par exemple, Concentration, Manipulation, Mental, Déplacement. (pas de règles)"
+      },
+      "mostly-fluff": {
+        "Name": "Essentiellement décoratifs",
+        "Tooltip": "Obéit à des règles mais elles sont quasiment jamais importantes. Il Pas grave si vous les oubliez. Ex. Ésoterica, Léger, Élaboré. (Obéit à des règles)"
+      },
+      "very-fluff": {
+        "Name": "Très décoratifs",
+        "Tooltip": "Pas de règles. Utilisé pour la saveur, peut servir de base pour d'autres choses (Ex. faiblesses) mais pas communément. Ex. Feu, Eau, Prédiction, Détection, Guérison, Gadget. (pas de règles)"
+      },
+      "user-custom": {
+        "Name": "Personnalisé de l'utilisateur",
+        "Tooltip": "Pour la personnalisation, vous pouvez définir les traits à mettre en valeur via les paramètres du module."
+      }
+    }
+  }
 }
