@@ -2,8 +2,8 @@
   "pf2e-technicolor-traits": {
     "Settings": {
       "Previews": {
-        "Name": "Preview Technicolor Traits, see them all at once",
-        "Label": "Preview all traits"
+        "Name": "Podgląd cech Technicolor, zobacz je wszystkie naraz",
+        "Label": "Podgląd wszystkich cech"
       },
       "Mode": {
         "Name": "Tryb kodowania kolorami",
