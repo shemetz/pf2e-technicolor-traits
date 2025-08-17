@@ -1,2 +1,88 @@
 {
+  "pf2e-technicolor-traits": {
+    "Settings": {
+      "Previews": {
+        "Name": "Preview Technicolor Traits, see them all at once",
+        "Label": "Preview all traits"
+      },
+      "Mode": {
+        "Name": "Tryb kodowania kolorami",
+        "Hint": "Po pełnym włączeniu cechy będą oznaczone kolorami w oparciu o kilkanaście różnych kategorii. Kolor czerwony oznacza ważność, a gruba ramka oznacza, że cecha ma reguły."
+      },
+      "RecolorRarity": {
+        "Name": "Zmień kolor cech rzadkości",
+        "Hint": "(jeśli opcja jest w pełni włączona) Zastąp domyślne kolory rzadkości pf2e jednolitym kolorem niebieskim lub zielonym poza nagłówkami. Zmniejsza to niepotrzebny bałagan wizualny, ponieważ rzadkość zazwyczaj nie ma znaczenia po pierwszym dostępie."
+      },
+      "CustomColoredTraits": {
+        "Name": "Niestandardowa lista cech do unikalnego kolorowania",
+        "Hint": "Oddzielone przecinkami. Będą miały kolory tęczy, aby były łatwo rozróżnialne."
+      },
+      "DisableTranslucentDisabledTags": {
+        "Name": "Zwiększenie widoczności tagów w nagłówkach kart kompendium",
+        "Hint": "Zwykle system PF2E sprawia, że wszystkie cechy stają się przezroczyste, gdy nie można ich edytować; to ustawienie zastępuje to zachowanie."
+      }
+    },
+    "Previews": {
+      "Title": "Podgląd cech Technicolor"
+    },
+    "Mode": {
+      "disabled": "Wyłączone (cechy nie będą oznaczone kolorami)",
+      "fully-enabled": "W pełni włączone",
+      "only-important": "Podkreślaj tylko ważne cechy (np. Obezwładnienie, Przepełnienie, Zjadliwość)."
+    },
+    "TraitCategory": {
+      "rarity": {
+        "Name": "Rzadkość",
+        "Tooltip": "np. Powszechny, Rzadki, Unikalny. (brak zasad, istotne w nagłówku)"
+      },
+      "origin": {
+        "Name": "Pochodzenie",
+        "Tooltip": "np. Ogólne, Umiejętności, Czarodziej, Burzyciel, Czart. (brak zasad, istotne w nagłówku)"
+      },
+      "sub-origin": {
+        "Name": "Podpochodzenie",
+        "Tooltip": "np. Tajemny, Boski, Okultystyczne, Pierwotny, Demon, Diabeł. (brak zasad, istotne w nagłówku)"
+      },
+      "build-limitation": {
+        "Name": "Ograniczenia budowy",
+        "Tooltip": "np. Kompozytowy, Przysięga, Projekcja, Ikona, Modyfikacja, Archetyp, Wieloklasowość, Nienaturalny. (posiada zasady, istotne w nagłówku)"
+      },
+      "type-mechanic": {
+        "Name": "Typ mechaniki",
+        "Tooltip": "np. Impuls, Sztuczka, Skupienie, Przestój, Zużywalny. (objęte zasadami)"
+      },
+      "subtype-mechanic": {
+        "Name": "Podtyp mechaniki",
+        "Tooltip": "np. Kształtowanie zaklęć, Kompozycja, Klątwa, Warunkowość, Tatuaż, Fulu, Pułapka, Sidła, Czarostrzał, Bomba, Umowa, Notka. (objęte zasadami)"
+      },
+      "important-mechanic": {
+        "Name": "Ważne mechaniki",
+        "Tooltip": "Coś o mechanice, o czym zawsze warto wiedzieć, najważniejsze cechy, na które należy zwrócić uwagę. Np. Obezwładnienie, Niestabilne, Rozmach, Napieranie, Klątwa, Przepełnienie, Elitarny, Nieumarły, Bezcielesny. (ma zasady)"
+      },
+      "important-mechanic-outside-chat": {
+        "Name": "Ważna informacja dotycząca mechaniki gry poza czatem",
+        "Tooltip": "Atak i niektóre główne cechy broni, które mają być wyróżnione tylko w nagłówkach kart. Np. Rzucane, Subtelny, Brutalny, Zasięg, Finezyjny. (ma zasady, istotne w nagłówku)"
+      },
+      "occasional-mechanic": {
+        "Name": "Okazjonalne mechaniki",
+        "Tooltip": "Zawiera zasady, które mają znaczenie tylko sporadycznie. Jeśli nie jesteś zaznajomiony z tymi zasadami, warto rzucić na nie okiem. Przykłady: Wizualny, Słuchowy, Przetworzony, Nieśmiercionośny, Starcie Konne, Usztywnione. (zawiera zasady)"
+      },
+      "common-trigger": {
+        "Name": "Typowy wyzwalacz",
+        "Tooltip": "Nie ma żadnych specjalnych zasad, ale inne cechy lub zdolności często do niego odwołują się, więc nie należy przeoczyć jego istnienia. Np. Koncentracja, Manipulacja, Mentalny, Ruch. (brak zasad)"
+      },
+      "mostly-fluff": {
+        "Name": "Głównie błahe sprawy",
+        "Tooltip": "Istnieją zasady, ale w zasadzie nigdy nie są one ważne, więc można o nich zapomnieć. Np. Ezoteryka, Światło, Przetworzony. (istnieją zasady)"
+      },
+      "very-fluff": {
+        "Name": "Bardzo błahe sprawy",
+        "Tooltip": "Nie ma reguł, służy do nadania charakteru, może być odwoływany przez inne elementy (np. podatności), ale nie jest to powszechne. Np. Ogień, Woda, Przewidywanie, Wykrywanie, Leczenie, Gadżet. (brak reguł)"
+      },
+      "user-custom": {
+        "Name": "Konfiguracja użytkownika",
+        "Tooltip": "Do dostosowania przez użytkownika. W ustawieniach modułu można określić, które cechy mają być dodatkowo wyróżnione."
+      }
+    }
+  }
 }
