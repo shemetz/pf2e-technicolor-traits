@@ -53,6 +53,7 @@ export const refreshStyleElement = () => {
   }
 
   if (mode === 'fully-enabled' && recolorRarity) {
+    // TODO - prevent this from applying inside the language selection window.  not:(.tag-selector) class on a distant ancestor maybe works
     newCss += css`
         tags:not(.package-overview), .tags:not(.package-overview) {
             .tag.rarity.common,
