@@ -74,7 +74,7 @@ export const refreshStyleElement = () => {
     `
   }
   if (mode !== 'disabled') {
-    newCss += css`*:not(.subsection.languages) > .tags:not(.modifiers) {`
+    newCss += css`*:not(.subsection.languages):not(.language-rarity) > .tags:not(.modifiers) {`
     for (const category of Object.values(TRAIT_CATEGORY)) {
       if (mode === 'only-important' && category !== TRAIT_CATEGORY.IMPORTANT_MECHANIC) {
         continue
