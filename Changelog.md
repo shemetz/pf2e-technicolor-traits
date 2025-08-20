@@ -1,5 +1,6 @@
 ## 1.0.3 - 2025-08-17
 - Added Polish localization (#1)
+- [1.0.4] Added French localization
 
 ## 1.0.2 - 2025-08-09
 - Added a setting to stop recoloring rarity
