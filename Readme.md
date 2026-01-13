@@ -61,3 +61,9 @@ When fully enabled (the default mode), this module will:
 | Mostly Fluff                    | Traits that have rules but are rarely important.             | Esoterica, Light, Processed                  | 🟩 Green                              | Thick          |
 | Very Fluff                      | Traits that are used for flavor and have no rules.           | Fire, Prediction, Steam, Gadget              | 🟩 Green                              | Thin           |
 | User Custom                     | Traits that are user-customizable.                           | User-defined traits                          | 🏳️‍🌈 Rainbow                        | Thick          |
+
+
+
+## Discussion
+
+You can discuss this module in its [dedicated thread in the Pathfinder on Foundry discord server](https://discord.com/channels/880968862240239708/1403153109533855846), or open a github issue here if it's a bug or a feature request.
