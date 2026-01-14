@@ -46,21 +46,21 @@ When fully enabled (the default mode), this module will:
 
 ## The Trait Categories
 
-| Trait Category                  | Description                                                  | Example traits                               | Color (importance)                    | Border (rules) |
-|---------------------------------|--------------------------------------------------------------|----------------------------------------------|---------------------------------------|----------------|
+| Trait Category                  | Description                                                  | Example traits                               | Color (importance)                     | Border (rules) |
+|---------------------------------|--------------------------------------------------------------|----------------------------------------------|----------------------------------------|----------------|
 | Rarity                          | Traits that describe how common or rare the item is.         | Common, Rare, Unique                         | 🟦 Blue in header, 🟩 green elsewhere | Thin           |
 | Origin                          | Traits that describe the origin of the item.                 | General, Skill, Wizard, Elf, Fiend           | 🟦 Blue in header, 🟩 green elsewhere | Thin           |
 | Sub-Origin                      | Traits that describe the sub-origin of the item.             | Arcane, Divine, Chaotic, Devil, Werecreature | 🟦 Blue in header, 🟩 green elsewhere | Thin           |
 | Build Limitation                | Traits that limit the build or usage of the item.            | Dedication, Aftermath, Composite, Oath       | 🟦 Blue in header, 🟩 green elsewhere | Thick          |
-| Type Mechanic                   | Traits that describe the general type of a thing.            | Cantrip, Focus, Impulse, Consumable, Staff   | ⬜ Grey                                | Thick          |
-| Subtype Mechanic                | Traits that describe the subtype of a thing.                 | Spellshape, Bravado, Hex, Grimoire           | ⬜ Grey                                | Thick          |
+| Type Mechanic                   | Traits that describe the general type of a thing.            | Cantrip, Focus, Impulse, Consumable, Staff   | ⬜ Grey                               | Thick          |
+| Subtype Mechanic                | Traits that describe the subtype of a thing.                 | Spellshape, Bravado, Hex, Grimoire           | ⬜ Grey                               | Thick          |
 | **Important Mechanic**          | Traits that are critical to know about.                      | Incapacitation, Unstable, Flourish, Subtle   | 🟥 Red                                | Thick          |
 | Important Mechanic Outside Chat | Attack, plus major weapon traits.                            | Attack, Thrown, Brutal, Splash               | 🟥 Red in header, orange elsewhere    | Thick          |
-| Occasional Mechanic             | Traits that have rules but are only occasionally meaningful. | Visual, Nonlethal, clockwork, Aquadynamic    | 🟧 Orange                             | Thick          |
-| Common Trigger                  | Traits that are commonly referenced by other abilities.      | Concentrate, Manipulate, Mental, Move        | 🟧 Orange                             | Thin           |
+| Occasional Mechanic             | Traits that have rules but are only occasionally meaningful. | Visual, Nonlethal, clockwork, Aquadynamic    | 🟨 Yellow                             | Thick          |
+| Common Trigger                  | Traits that are commonly referenced by other abilities.      | Concentrate, Manipulate, Mental, Move        | 🟨 Yellow                             | Thin           |
 | Mostly Fluff                    | Traits that have rules but are rarely important.             | Esoterica, Light, Processed                  | 🟩 Green                              | Thick          |
 | Very Fluff                      | Traits that are used for flavor and have no rules.           | Fire, Prediction, Steam, Gadget              | 🟩 Green                              | Thin           |
-| User Custom                     | Traits that are user-customizable.                           | User-defined traits                          | 🏳️‍🌈 Rainbow                        | Thick          |
+| User Custom                     | Traits that are user-customizable.                           | User-defined traits                          | 🏳️‍🌈 Rainbow                            | Thick          |
 
 
 
