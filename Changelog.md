@@ -1,3 +1,6 @@
+## 1.1.0 - 2026-02-02
+- Added Starfinder 2e support
+
 ## 1.0.3 - 2025-08-17
 - Added Polish localization (#1)
 - [1.0.4] Added French localization
