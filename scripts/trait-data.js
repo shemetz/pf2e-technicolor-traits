@@ -485,7 +485,7 @@ export const CATEGORY_PER_TRAIT = {
   cold: TC.VERY_FLUFF,
   electricity: TC.VERY_FLUFF,
   force: TC.VERY_FLUFF,
-  sonic: TC.VERY_FLUFF,
+  sonic: TC.MOSTLY_FLUFF, // doesn't work in Silence or in vacuum
   vitality: TC.MOSTLY_FLUFF,
   void: TC.MOSTLY_FLUFF,
   spirit: TC.MOSTLY_FLUFF, // spirit only affects creatures with souls.  note that this overlaps with spirit creatures :(
