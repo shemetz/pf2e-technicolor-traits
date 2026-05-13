@@ -55,12 +55,34 @@ export const refreshStyleElement = () => {
   if (mode === 'fully-enabled' && recolorRarity) {
     // TODO - prevent this from applying inside the language selection window.  not:(.tag-selector) class on a distant ancestor maybe works
     newCss += css`
-        tags:not(.package-overview), .tags:not(.package-overview) {
+        tags:not(.package-overview), .tags:not(.package-overview):not(.input-element-tags) {
             .tag.rarity.common,
             .tag.rarity.uncommon,
             .tag.rarity.rare,
             .tag.rarity.unique {
                 background-color: var(--background-pf2ett-rarity);
+            }
+        }
+
+        /* prevent this from applying inside the language selection dialog, by re-applying them.  (note, the extra .paizo-style is just to increase specificity) */
+        /* also prevent inside compendium browser */
+        ul.has-rarity, ul.result-list {
+            > li > .tags.paizo-style {
+                > .tag.rarity.common {
+                    background-color: var(--color-rarity-common);
+                }
+
+                > .tag.rarity.uncommon {
+                    background-color: var(--color-rarity-uncommon);
+                }
+
+                > .tag.rarity.rare {
+                    background-color: var(--color-rarity-rare);
+                }
+
+                > .tag.rarity.unique {
+                    background-color: var(--color-rarity-unique);
+                }
             }
         }
     `
