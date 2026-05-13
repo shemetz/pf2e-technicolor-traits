@@ -86,6 +86,10 @@ header.sheet-header {
     }
 }
 
+.pf2ett-previews-container {
+    overflow: auto;
+}
+
 .IGNORE {
     /* Old/existing system colors, for reference. */
     --color-bg-trait: #5e0000;
