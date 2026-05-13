@@ -1,3 +1,8 @@
+## 1.1.1 - 2026-05-13
+- Fixed rarities being recolored even when it's not desirable (in language selection, in compendium)
+- Fixed scroll in preview dialog
+- Marked as V14 compatible
+
 ## 1.1.0 - 2026-02-02
 - Added Starfinder 2e support
 
